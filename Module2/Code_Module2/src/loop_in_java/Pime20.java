@@ -2,7 +2,7 @@ package loop_in_java;
 
 import java.util.Scanner;
 
-public class pime20 {
+public class Pime20 {
     Scanner sc = new Scanner(System.in);
     public static boolean isPrime(int num) {
         if (num < 2) {

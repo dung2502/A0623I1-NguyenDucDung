@@ -2,7 +2,7 @@ package loop_in_java;
 
 import java.util.Scanner;
 
-public class prime_low100 {
+public class Prime_low100 {
         Scanner sc = new Scanner(System.in);
 
     public static boolean isPrime(int num) {
