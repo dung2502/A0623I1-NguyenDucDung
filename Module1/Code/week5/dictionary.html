@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+  <h2 style="margin-left: 50px"> dictionary</h2>
+  <span id="english" name="english"></span>
+  <script>
+      let a = prompt("Nhập từ tiếng anh cần tra cứu: ");
+    let vietnamese = ['sách', 'bút', 'máy tính', 'tivi'];
+    let engLish = ['book', 'pen', 'computer', 'tilivision'];
+    let total;
+    for (let i = 0; i<engLish.length; i++){
+            if (engLish[i] === a ){
+                total = vietnamese[i];
+            }
+    }
+    if (total !== undefined){
+        document.getElementById("english").innerHTML = "Từ cần tìm là: " + total;
+    }
+    else{
+        document.getElementById("english").innerHTML = "Không tìm thấy từ cần tìm";
+    }
+  </script>
+</form>
+</body>
+</html>

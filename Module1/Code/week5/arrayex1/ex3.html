@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let numArr = [6,1,2,3,4,11,14,15,16,17,10,9,8];
+  let maxN = numArr[0];
+  let total = 0;
+  for (let i = 0; i < numArr.length; i++){
+    if ( numArr[i] > maxN  ){
+      maxN = numArr[i];
+    }
+    total += numArr[i];
+  }
+  console.log("Max = " + maxN + " TB = " + total/numArr.length);
+</script>
+</body>
+</html>

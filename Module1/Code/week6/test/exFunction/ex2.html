@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Chose a number pleased:
+<label for="value"></label><input type="text" name="value" id="value" oninput="showNum()"><br>
+<span id="show"></span>
+<script>
+  function number(a){
+    return a + 1;
+  }
+  function showNum(){
+    let num = parseInt(document.getElementById("value").value);
+    document.getElementById("show").innerHTML = number(num);
+  }
+</script>
+</body>
+</html>

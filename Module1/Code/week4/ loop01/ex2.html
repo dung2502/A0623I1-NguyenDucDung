@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let c = parseInt(prompt("Nhap nhiet do vao ('C): "));
+  while(1){if (c>100){
+      alert("Vui long giam nhiet do");
+      c = parseInt(prompt("Nhap nhiet do vao ('C): "));
+  }
+  else if (c<20){
+      alert("Vui long tang nhiet do");
+      c = parseInt(prompt("Nhap nhiet do vao ('C): "));
+  }
+  else{
+      alert("Nhiet do ban vua nhap la: "+ c);
+      c = parseInt(prompt("Nhap nhiet do moi vao ('C): "));
+  }
+  }
+</script>
+</body>
+</html>

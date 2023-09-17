@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let inFirst = parseInt(prompt("first: "));
+    // let inLast = parseInt(prompt("last: "));
+    function isPrime(number){
+        if (number <= 1 ){
+             return false;
+        }
+        else{
+            for (let i = 2; i < Math.sqrt(number); i++){
+                if (number % i === 0){
+                    return false;
+                }
+            }
+        }
+    }
+    function Prime(first, last){
+        let prime = [];
+        for ( let number = first; number < last; number++){
+            if (isPrime(number)){
+                prime.push(number);
+            }
+        }
+        return prime;
+    }
+    let inFirst = 1;
+    let inLast = 10;
+    let result = Prime(inFirst,inLast);
+    console.log(result);
+</script>
+</body>
+</html>

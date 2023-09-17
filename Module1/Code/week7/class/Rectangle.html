@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="500" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML5 canvas tag.</canvas>
+<script>
+    let Rectangle = function (length, width){
+        this.length = length;
+        this.width = width;
+        this.getLength = function (){
+            return length;
+        }
+        this.getWidth = function (){
+            return width;
+        }
+        this.acreage = function (){
+            return length * width;
+        }
+        this.perimeter = function (){
+            return 2*(length + width);
+        }
+        this.setRectangle = function(){
+            this.length = length;
+            this.width = width;
+        }
+        this.drawCanvas = function(){
+            let canvas = document.getElementById("myCanvas");
+            let context = canvas.getContext("2d");
+            let a = width * 96 / 2.54;
+            let b = length * 96 / 2.54;
+            context.fillStyle = "#FF0000";
+            context.fillRect(40,50,a,b);
+        }
+    }
+    let rectangle = new Rectangle(8,4);
+    rectangle.setRectangle(7,5);
+    let acreage = rectangle.acreage();
+    let perimeter = rectangle.perimeter();
+    document.write( "<br>"+ acreage + " and " + perimeter);
+    rectangle.drawCanvas();
+
+</script>
+</body>
+</html>

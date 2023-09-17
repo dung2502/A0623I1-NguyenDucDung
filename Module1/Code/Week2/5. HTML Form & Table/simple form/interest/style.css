@@ -1,0 +1,35 @@
+body{ background-color: aliceblue;
+    border-width: thin;
+    border-style: solid;
+    position: absolute;
+}
+h2{
+    background-color: #FF8C00;
+    text-align: center;
+    width:100%;
+}
+
+.ab{
+    color: blue;
+}
+#hobby{
+    color: #ff7c35;
+    padding-left: 4px;
+
+}
+#hobby1{
+    color: #ff7c35;
+    padding-left: 62px;
+}
+.submit{
+    padding:10px;
+    margin-left: 70px;
+    margin-right: 50px;
+    background-color: azure;
+}
+.content{
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 50px;
+
+}

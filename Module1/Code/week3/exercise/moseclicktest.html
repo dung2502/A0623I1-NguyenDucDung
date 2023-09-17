@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <form onsubmit="return false">
+    <img id="image" src="https://cdn.pixabay.com/photo/2013/07/13/10/51/football-157930_1280.png" style="height: 100px;width: 100px">
+      <p>Click me pleased!!!!!!</p>
+      <button type="button" id="cclick"> Click Me </button>
+  </form>
+<script>
+    var imagee = null;
+    imagee = document.getElementById("image");
+    function do_click(){
+        imagee = document.getElementById("image");
+        imagee.style.position = 'relative';
+        imagee.style.left = '0px';
+    }
+    let move = document.getElementById("cclick");
+    move.addEventListener("click",moveright);
+    function moveright(){
+        imagee.style.left = parseInt(imagee.style.left) + 10 + 'px';
+    }
+    window.onload = do_click;
+</script>
+</body>
+</html>

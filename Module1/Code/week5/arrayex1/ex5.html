@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt("Pleased add number here:"));
+    let arr = [];
+    let enough = 0;
+    for (let i = 0; i< num; i++){
+      arr.push(parseInt(prompt("add number in to array: ")));
+    }
+    console.log(arr);
+    for (let i = 0; i < num; i++ ){
+      if (arr[i] < 0){
+        enough++;
+      }
+    }
+    console.log(enough);
+</script>
+</body>
+</html>

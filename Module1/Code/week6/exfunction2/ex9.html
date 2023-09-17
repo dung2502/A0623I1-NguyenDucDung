@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function text(a,b){
+    let total = 0;
+    for( let i = 0 ; i < a.length; i++){
+      if(a[i] === b){
+          total++;
+      }
+    }
+    return total > 0 ? total : -1;
+  }
+  let arr = [];
+  let t = prompt("text : ");
+  let num = parseInt(prompt("number in array A : "));
+  for (let i = 0; i< num; i++){
+    arr.push(prompt("add text in to array A: "));
+  }
+  let result = text(arr,t);
+  console.log(`Ký tự '${t}' xuất hiện ${result === -1 ? '0a' : result} lần trong mảng.`);
+</script>
+</body>
+</html>

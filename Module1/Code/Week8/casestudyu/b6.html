@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    th{
+      width: 250px;
+      height: 40px;
+    }
+    td{
+        text-align: center;
+    }
+    #name{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div id="name">
+  <button onclick="addStudent()" class="student"> Thêm mới học viên </button>
+  <button onclick="updateStudent()" class="student"> Sửa thông tin học viên </button>
+  <button onclick="deleteStudent()" class="student"> Xóa học viên </button>
+</div>
+<span id="studentShow" style="margin-left: 50%"> <b>Hiển thị học viên</b></span>
+<span id="show"></span>
+<script>
+  class student{
+    constructor(id, name, classname, email, dateOfBirth, module ) {
+      this.id = id;
+      this.name = name;
+      this.classname = classname;
+      this.email = email;
+      this.dateOfBirth = dateOfBirth;
+      this.module = module;
+      this.getId = function (){
+        return this.id;
+      };
+      this.getName = function (){
+        return this.name;
+      };
+      this.getClassname = function (){
+        return this.classname;
+      };
+      this.getEmail = function (){
+        return this.email;
+      };
+      this.getDateOfBirth = function (){
+        return this.dateOfBirth;
+      };
+      this.getModule = function (){
+        return this.module;
+      };
+      this.setId = function (id){
+        this.id = id;
+      };
+      this.setName = function (name){
+        this.name = name;
+      };
+      this.setClassname = function (classname){
+        this.classname = classname;
+      };
+      this.setEmail = function (email){
+        this.email = email;
+      };
+      this.setDateOfBirth = function (dateOfBirth){
+        this.dateOfBirth = dateOfBirth;
+      };
+      this.setModule = function (){
+        this.module = module;
+      };
+    }
+  }
+  let student1 = new student("HV-0001", "Nguyễn Văn A", "C1022G1","nguyenvana@gmail.com","01/01/2004", 1);
+  let student2 = new student("HV-0002", "Nguyễn Văn B", "C1122G1","nguyenvanb@gmail.com","02/02/2004", 1);
+  let student3 = new student("HV-0003", "Nguyễn Thị C", "C1222G1","nguyenthic@gmail.com","03/03/2004", 1);
+  let arrStudent = [];
+  arrStudent.push(student1);
+  arrStudent.push(student2);
+  arrStudent.push(student3);
+  let show = document.getElementById("studentShow");
+  show.addEventListener("click", displayA);
+  function displayA(){
+    let table = '<table style="border: 1px solid black; border-collapse: collapse" border="1">';
+    table += '<tr>'+'<th>'+'Mã học viên'+'</th>'
+              + '<th>'+'Tên'+'</th>'
+              + '<th>'+'Lớp'+'</th>'
+              + '<th>'+'Email'+'</th>'
+              + '<th>'+'Ngày Sinh'+'</th>'
+              + '<th>'+'Module'+'</th>'
+    +'</tr>';
+    for(let i =0; i<arrStudent.length;i++) {
+      table += '<tr>' + '<td>' + arrStudent[i].getId() + '</td>'
+              + '<td>' + arrStudent[i].getName() + '</td>'
+              + '<td>' + arrStudent[i].getClassname() + '</td>'
+              + '<td>' + arrStudent[i].getEmail() + '</td>'
+              + '<td>' + arrStudent[i].getDateOfBirth() + '</td>'
+              + '<td>' + arrStudent[i].getModule() + '</td>'
+              + '</tr>';
+    }
+    table += '</table>';
+    document.getElementById('show').innerHTML=table;
+  }
+  function addStudent() {
+    let idStudent = prompt("Nhập mã học viên: ");
+    let name = prompt("Nhập tên học viên: ");
+    let classStudent = prompt("Nhập lớp của học viên: ");
+    let email = prompt("Nhập email của học viên: ");
+    let dateOfBirth = prompt("Nhập Ngày sinh của học viên(Theo định dạng dd/mm/yy): ");
+    let module = prompt("Nhập module của học viên đang học: ");
+    if(idStudent === "" || name === "" || classStudent === "" || email === ""|| dateOfBirth === ""|| module === ""){
+        alert("Bạn đã nhập thiếu thông tin của học viên!!!");
+    }
+    else{
+        let newStudent = new student(idStudent, name, classStudent, email, dateOfBirth, module);
+        arrStudent.push(newStudent);
+    }
+    displayA();
+  }
+  function updateStudent(){
+      let idIn = prompt("Nhập mã học viên bạn cần đổi vào: ");
+      let temp = -1;
+      for(let i =0; i < arrStudent.length; i++){
+          if(idIn === arrStudent[i].getId()){
+              temp = i;
+              break;
+          }
+      }
+      if( temp === -1){
+          alert("Mã học viên không được tìm thấy.");
+          return;
+      }
+          let control = parseInt(prompt("hãy chọn thuộc tính bạn muốn sửa dổi của sinh viên từ 1 -> 6: "));
+          switch (control){
+              case 1:
+                  let newID = prompt("Nhập mã học viên mới: ");
+                  arrStudent[temp].setId(newID);
+                  break;
+              case 2:
+                  let newName = prompt("Nhập tên mới: ");
+                  arrStudent[temp].setName(newName);
+                  break;
+              case 3:
+                  let newClass = prompt("Nhập lớp mới: ");
+                  arrStudent[temp].setClassname(newClass);
+                  break;
+              case 4:
+                  let newEmail = prompt("Nhập email mới: ");
+                  arrStudent[temp].setEmail(newEmail);
+                  break;
+              case 5:
+                  let newDate = prompt("Nhập ngày sinh mới: ");
+                  arrStudent[temp].setDateOfBirth(newDate);
+                  break;
+              case 6:
+                  let newModule = prompt("Nhập module mới: ");
+                  arrStudent[temp].setModule(newModule);
+                  break;
+              default:
+                  alert("Đã thoát khỏi chức năng!");
+
+          }
+      displayA();
+  }
+  function deleteStudent(){
+      let idIn = prompt("Nhập mã học viên bạn muốn xóa vào  : ");
+      let temp = -1;
+      for(let i =0; i < arrStudent.length; i++){
+          if(idIn === arrStudent[i].getId()){
+              temp = i;
+              break;
+          }
+      }
+      if( temp === -1){
+          alert("Mã học viên không được tìm thấy.");
+          return;
+      }
+      let yesOrNo = prompt("Bạn có muốn xóa học viên không ?(yes or no)")
+      if(yesOrNo === 'yes'){
+          arrStudent.splice(temp,1);
+      }
+      displayA();
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Mobile{
+    constructor(battery, edit, inbox, sent, on) {
+      this.battery = battery;
+      this.inbox = inbox;
+      this.sent = sent;
+      this.editor = edit;
+      this.phoneStatus = on;
+         this.onOff  = function (){
+                if(this.phoneStatus === "on"){
+                    alert("on");
+                    return this.phoneStatus = "off";
+                }
+                else{
+                    return on;
+                }
+            }
+        this.batteryCharger = function (){
+            for (let i = this.battery; i <= 100; i++){
+                alert("Battery up");
+                this.battery = i;
+            }
+        }
+        if(this.phoneStatus === "on")
+        {
+            this.texting = function (){
+                this.battery --;
+                return this.editor.push(prompt("Nhập tin nhắn bạn muốn gửi:"));
+            }
+            this.receiveMessages = function(){
+                this.battery --;
+                return this.inbox.push(this.sent[this.sent.length-1]);
+            }
+            this.sentMessages = function (){
+                this.battery --;
+                return this.sent.push(prompt('Message: '));
+            }
+            this.seenMessages = function (){
+                this.battery --;
+                this.inbox.forEach(function (value){
+                    console.log(value + "/n");
+                })
+            }
+            this.seenSentMessages = function (){
+                this.battery --;
+                this.sent.forEach(function (value){
+                    console.log(value + "/n");
+                })
+            }
+        }
+    }
+  }
+  let nokiaEdit =["hello"];
+  let nokiaInbox =["hi"];
+  let nokiaSent =["how are you?"];
+  let iphoneEdit =["Im fine thank you"];
+  let iphoneInbox = nokiaSent;
+  let iphoneSent = nokiaInbox;
+  let nokia = new Mobile(100, nokiaEdit, nokiaInbox, nokiaSent, 'on');
+  let iphone = new Mobile(100, iphoneEdit, iphoneInbox, iphoneSent, 'on');
+  nokia.onOff();
+  nokia.sentMessages();
+  iphone.seenMessages();
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let num = parseInt(prompt("Nhap so so fibonanci ban muon in ra: "));
+  let n1= 0, n2= 1;
+  let temp
+  for (let i = 0; i < num; i++ ){
+    temp = n1 + n2;
+    n1 = n2;
+    n2 = temp;
+    if(temp % 5 === 0){
+      document.write("So fibonanci chia het cho 5 la: "+ temp);
+      break;
+    }
+  }
+</script>
+</body>
+</html>

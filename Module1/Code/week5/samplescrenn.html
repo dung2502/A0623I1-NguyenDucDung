@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Sample Screen</h2>
+<input  id="addText" type="text">
+<input id="add" type="button" name="Add" value="Add" style="margin-left: 10px">
+<input id="display" type="button" name="Display" value="Display" style="margin-left: 5px" onclick="displayArray()">
+<span id="outSpan" name="outSpan"></span>
+<script>
+  let x = 0;
+  let array = Array();
+let inAdd = document.getElementById("add");
+inAdd.addEventListener("click", addArray);
+
+function addArray(){
+  array[x] = document.getElementById("addText").value;
+  alert("Elements: " + array[x] + " Added at index " + x);
+  x++;
+  document.getElementById("addText").value= "";
+}
+function displayArray(){
+  let e ="<hr/>";
+  for (let i = 0; i < array.length; i++) {
+    e += "Element " + i + " = " + array[i] + "<br/>";
+  }
+  document.getElementById("outSpan").innerHTML =  e;
+}
+
+</script>
+</body>
+</html>

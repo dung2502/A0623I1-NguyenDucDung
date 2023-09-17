@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let num = parseInt(prompt("number in array A : "));
+  let text = []
+  let reverText = [];
+  for (let i = 0; i< num; i++){
+    text.push(prompt("add number in to array A: "));
+  }
+  for (let i = num - 1; i >= 0; i--) {
+    reverText.push(text[i]);
+  }
+  console.log(reverText);
+</script>
+</body>
+</html>

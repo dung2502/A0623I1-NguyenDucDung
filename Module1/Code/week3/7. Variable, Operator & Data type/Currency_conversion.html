@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency_conversion</title>
+</head>
+<body>
+    <form>
+      <b  style="margin-left: 50px">Amount</b>
+      <b style="margin-left: 155px">Form Currency</b>
+      <b style="margin-left: 155px">To Currnecy</b><br>
+      <input type="text" name="money" id="number">
+      <select id="fcurency" name="money" style="margin-left: 85px;width: 120px">
+        <option value="vn">VietNam</option>
+        <option value="usd">USD</option>
+        <option value="yen">Japan</option>
+        <option value="won">Korea</option>
+        <option value="bath">Thailand</option>
+      </select>
+      <select id="tcurency"  name="money" style="margin-left: 130px;width: 120px">
+        <option value="vn">VietNam</option>
+        <option value="usd">USD</option>
+        <option value="yen">Japan</option>
+        <option value="won">Korea</option>
+        <option value="bath">Thailand</option>
+      </select>
+      <button id="convert" name="convert" type="button" value="convert" style="margin-left: 20px; background-color: aqua">Convert</button><br>
+      <span id ="total" style="margin-top: 100px; color: blue"></span>
+    </form>
+<script>
+    let input = document.getElementById("convert");
+    input.addEventListener("click", do_convert);
+    function do_convert() {
+          let inmoney = document.getElementById("number").value;
+          let infcurency = document.getElementById("fcurency").value;
+          let intcurency = document.getElementById("tcurency").value;
+          if(infcurency == "vn"){
+            if(intcurency == "vn"){
+              let intotal = inmoney;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " VND";
+            }
+            else if (intcurency == "usd"){
+              let intotal = inmoney * 0.00004;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " USD";
+            }
+            else if (intcurency == "yen"){
+              let intotal = inmoney * 0.0058;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " ¥";
+            }
+            else if (intcurency == "won"){
+              let intotal = inmoney * 0.05354;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " ₩";
+            }
+            else if (intcurency == "bath"){
+              let intotal = inmoney * 0.00146;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " ฿";
+            }
+          }
+          else if(infcurency == "usd"){
+            if(intcurency == "vn"){
+              let intotal = inmoney * 23.647;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " VND";
+            }
+            else if(intcurency == "usd"){
+              let intotal = inmoney ;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " USD";
+            }
+            else if(intcurency == "yen"){
+              let intotal = inmoney * 138.44 ;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " ¥";
+            }
+            else if(intcurency == "won"){
+              let intotal = inmoney * 1265.88 ;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " ₩";
+            }
+            else if(intcurency == "bath"){
+              let intotal = inmoney * 34.63 ;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " ฿";
+            }
+
+          }
+          else if(infcurency == "yen"){
+            if(intcurency == "vn"){
+              let intotal = inmoney * 170.77;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " VND";
+            }
+            else if(intcurency == "usd"){
+              let intotal = inmoney * 0.0072 ;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " USD";
+            }
+            else if(intcurency == "yen"){
+              let intotal = inmoney;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " ¥";
+            }
+            else if(intcurency == "won"){
+              let intotal = inmoney * 9.14 ;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " ₩";
+            }
+            else if(intcurency == "bath"){
+              let intotal = inmoney * 0.25 ;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " ฿";
+            }
+          }
+          else if (infcurency == "won"){
+            if(intcurency == "vn"){
+              let intotal = inmoney * 18.67;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " VND";
+            }
+            else if(intcurency == "usd"){
+              let intotal = inmoney * 0.00079 ;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " USD";
+            }
+            else if(intcurency == "yen"){
+              let intotal = inmoney * 0.11;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " ¥";
+            }
+            else if(intcurency == "won"){
+              let intotal = inmoney;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " ₩";
+            }
+            else if(intcurency == "bath"){
+              let intotal = inmoney * 0.027 ;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " ฿";
+            }
+          }
+          else if(infcurency == "bath"){
+            if(intcurency == "vn"){
+              let intotal = inmoney * 682.47;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " VND";
+            }
+            else if(intcurency == "usd"){
+              let intotal = inmoney * 0.029 ;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " USD";
+            }
+            else if(intcurency == "yen"){
+              let intotal = inmoney * 4;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " ¥";
+            }
+            else if(intcurency == "won"){
+              let intotal = inmoney * 36.56;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " ₩";
+            }
+            else if(intcurency == "bath"){
+              let intotal = inmoney;
+              document.getElementById("total").innerHTML = "Total = " + intotal + " ฿";
+            }
+          }
+
+    }
+</script>
+</body>
+</html>

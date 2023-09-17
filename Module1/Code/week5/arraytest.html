@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let fr = ["banana", "mango", "orange"];
+    let text ="";
+    let chuoi = fr[0];
+    fr.push("apple");
+    fr.unshift("cucumber")
+    // document.write(chuoi + "<br/>");
+    for (i =0; i< fr.length; i++){
+        text += fr[i] + "<br/>";
+    }
+    document.write(text);
+    // fr.post();
+    fr.sort();
+    // fr.reverse();
+    let x = [1,3,5,7];
+    let y = [2,4,6];
+    x[2] = y[x.length-3] + x [ x[0] + y[0] ];
+    console.log(x);
+    let car =[
+        ["merc", "lambor", "lexu"],
+        ["bycle", "motor","pp"]
+    ;
+    for (let i = 0; i <3; i++){
+        for(let j = 0; j< 3; j++) {
+            console.log(car[i][j] + "<br/>");
+        }
+    }
+</script>
+</body>
+</html>

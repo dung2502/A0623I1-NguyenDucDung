@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class mouse{
+    constructor(name, weight, speed, status) {
+      this.name = name;
+      this.weight = weight;
+      this.speed = speed;
+      this.status = status;
+      this.sounding = function (){
+        alert("Chit .... chit ....");
+      };
+    }
+  }
+  class cat {
+    constructor(name, weight, speed) {
+      this.name = name;
+      this.weight = weight;
+      this.speed = speed;
+      this.getWeight = function (){
+        return this.weight;
+      };
+      this.sounding = function (){
+        alert("Meoz .... Meoz ...");
+      }
+      this.catchMouse = function (mouse){
+        if (this.speed > mouse.speed){
+          alert(" You catch a mouse !!!");
+        }
+        else{
+          alert("Oh no :((( You lost your mouse !!")
+        }
+      };
+      this.eatMouse = function (mouse){
+        if (mouse.status === 'life'){
+          this.weight++;
+        }
+      }
+    }
+  }
+  let catTom = new cat("Tom", 20, 20);
+  let mouseJerry = new mouse("Jerry", 2, 10, 'life');
+  mouseJerry.sounding();
+  catTom.sounding();
+  console.log(catTom.weight);
+  catTom.catchMouse(mouseJerry);
+  console.log(mouseJerry.speed)
+  catTom.eatMouse(mouseJerry.status);
+  let catW = catTom.getWeight();
+  console.log(catW);
+</script>
+</body>
+</html>

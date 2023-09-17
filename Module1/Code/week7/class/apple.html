@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+     class Apple {
+       constructor(weight) {
+         this.weight = weight;
+         this.getWeight = function (){
+           return this.weight;
+         }
+       }
+  }
+     class Human {
+       constructor(name, gender, weight) {
+         this.name= name;
+         this.gender = gender;
+         this.weight= weight;
+         this.setGender = function (){
+           this.gender = gender;
+         }
+         this.setName = function (){
+           this.name = name;
+         }
+         this.setWeight = function (){
+           this.weight = weight;
+         }
+         this.getName = function (){
+           return this.name;
+         }
+         this.getWeight = function (){
+           return this.weight;
+         }
+         this.speak = function (a){
+           console.log(a);
+         }
+         this.eatApple = function (a){
+
+           if (a.weight > 0){
+             a.weight --;
+             this.weight ++;
+           }
+         }
+         this.checkApple = function (a){
+           if( a.weight === 0){
+             alert("Weight apple = " + a.weight);
+           }
+           else{
+             alert("Weight apple = " + a.weight);
+           }
+         }
+       }
+  }
+  let human1 = new Human('bao', true, 80);
+  let apple1 = new Apple(10);
+  console.log(apple1.weight);
+  human1.checkApple(apple1);
+  human1.eatApple(apple1);
+  let a = apple1.getWeight();
+     console.log(a);
+</script>
+</body>
+</html>

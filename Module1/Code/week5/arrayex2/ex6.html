@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let str ="love-you";
+  let arr = [];
+  let charToReplace = '-';
+  let replacementChar = '_';
+  for (let i = 0; i< str.length;i++){
+    if (str[i] === charToReplace ){
+     arr.push(replacementChar);
+    }
+    else{
+      arr.push(str[i]);
+    }
+  }
+  console.log(arr);
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="ready()">
+
+    <img id="image" src="https://cdn.pixabay.com/photo/2013/07/13/10/51/football-157930_1280.png" style="position:absolute;left:0; top:0;height: 100px;width: 100px">
+<script>
+  function up(){
+    let element = document.getElementById("image");
+    element.style.top = parseInt(element.style.top) - 5 +'px';
+  }
+  function down(){
+    let element = document.getElementById("image");
+    element.style.top = parseInt(element.style.top) + 5 +'px';
+  }
+  function  right(){
+    let element = document.getElementById("image");
+    element.style.left = parseInt(element.style.left) + 5 + 'px';
+  }
+  function  left1(){
+    let element = document.getElementById("image");
+    element.style.left = parseInt(element.style.left) - 5 + 'px';
+  }
+  function move(event){
+    switch (event.keyCode){
+      case 37:
+        left1();
+        break;
+      case 38:
+        up();
+        break;
+      case 39:
+        right();
+        break;
+      case 40:
+        down();
+        break;
+    }
+  }
+  function ready(){
+    window.addEventListener("keydown",move);
+  }
+</script>
+
+</body>
+</html>

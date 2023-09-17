@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Good - Fast - Cheap</title>
+</head>
+<body>
+<form id="form">
+  <label>
+    <input type="checkbox" id="good" value="good" onchange="changed(this)">good
+  </label>
+  <br>
+  <label>
+    <input type="checkbox" id="fast" value="fast" onchange="changed(this)">fast
+  </label>
+  <br>
+  <label>
+    <input type="checkbox" id="cheap" value="cheap" onchange="changed(this)">cheap
+  </label>
+</form>
+<script>
+  const good = document.getElementById("good");
+  const fast =  document.getElementById("fast");
+  const cheap = document.getElementById("cheap");
+  function changed(el){
+    isGood = good.checked;
+    isFast = fast.checked;
+    isCheap = cheap.checked;
+
+    if(isGood && isFast && isCheap && el == cheap){
+      fast.checked = false;
+    }
+    if(isGood && isCheap && isFast && el == fast){
+      good.checked = false;
+    }
+    if(isCheap && isFast && isGood && el == good){
+      cheap.checked = false;
+    }
+
+  }
+
+</script>
+</body>
+</html>

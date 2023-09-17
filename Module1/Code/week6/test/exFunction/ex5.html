@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+  let Constellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+  function checkStar(a,b){
+    for( let i = 0; i < a.length;i++){
+      if( x === a[i]){
+        alert("Chòm sao tương ứng với ngôi sao là: "+ b[i]);
+        return;
+      }
+    }
+    alert(" Không có tên ngôi sao bạn vừa nhập.");
+  }
+  let x = prompt("Nhập tên chòm sao bạn muốn tìm vào đây: ");
+  checkStar(star,Constellation);
+</script>
+</body>
+</html>

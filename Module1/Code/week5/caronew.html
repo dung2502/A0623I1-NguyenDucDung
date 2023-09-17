@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Caro</title>
+  <style>
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 50px);
+      gap: 2px;
+    }
+    .cell {
+      width: 50px;
+      height: 50px;
+      border: 1px solid black;
+      text-align: center;
+      font-size: 24px;
+      line-height: 50px;
+    }
+  </style>
+</head>
+<body>
+<h1>Game Caro</h1>
+<div class="board" id="board">
+  <div class="cell" onclick="makeMove(0, 0)"></div>
+  <div class="cell" onclick="makeMove(0, 1)"></div>
+  <div class="cell" onclick="makeMove(0, 2)"></div>
+  <div class="cell" onclick="makeMove(1, 0)"></div>
+  <div class="cell" onclick="makeMove(1, 1)"></div>
+  <div class="cell" onclick="makeMove(1, 2)"></div>
+  <div class="cell" onclick="makeMove(2, 0)"></div>
+  <div class="cell" onclick="makeMove(2, 1)"></div>
+  <div class="cell" onclick="makeMove(2, 2)"></div>
+</div>
+<script>
+  // Tạo một ma trận 2 chiều để lưu trạng thái của bàn cờ
+  const board = [
+    ['', '', ''],
+    ['', '', ''],
+    ['', '', '']
+  ];
+
+  let currentPlayer = 'X'; // Người chơi đầu tiên là 'X'
+
+  function makeMove(row, col) {
+    // Kiểm tra ô đã được chọn chưa và trạng thái của bàn cờ
+    if (board[row][col] === '' && !checkWin()) {
+      board[row][col] = currentPlayer;
+      document.getElementById('board').children[row * 3 + col].innerText = currentPlayer;
+      currentPlayer = currentPlayer === 'X' ? 'O' : 'X'; // Thay đổi lượt chơi
+    }
+    if (checkWin()) {
+      alert("Nguoi chien thang la: " + currentPlayer);
+      resetBoard();
+    } else if (checkDraw()) {
+      alert('Hoa!');
+      resetBoard();
+    }
+  }
+
+  function checkWin() {
+    // Kiểm tra trạng thái thắng của bàn cờ
+    for (let i = 0; i < 3; i++) {
+      if (board[i][0] === currentPlayer && board[i][1] === currentPlayer && board[i][2] === currentPlayer) {
+        return true; // Kiểm tra hàng thắng
+      }
+      if (board[0][i] === currentPlayer && board[1][i] === currentPlayer && board[2][i] === currentPlayer) {
+        return true; // Kiểm tra cột thắng
+      }
+    }
+    if (board[0][0] === currentPlayer && board[1][1] === currentPlayer && board[2][2] === currentPlayer) {
+      return true; // Kiểm tra đường chéo thắng
+    }
+    if (board[0][2] === currentPlayer && board[1][1] === currentPlayer && board[2][0] === currentPlayer) {
+      return true; // Kiểm tra đường chéo thắng
+    }
+    return false;
+  }
+
+  function checkDraw() {
+    // Kiểm tra xem có hòa không
+    for (let i = 0; i < 3; i++) {
+      for (let j = 0; j < 3; j++) {
+        if (board[i][j] === '') {
+          return false;
+        }
+      }
+    }
+    return true;
+  }
+
+  function resetBoard() {
+    // Khởi tạo lại bàn cờ
+    for (let i = 0; i < 3; i++) {
+      for (let j = 0; j < 3; j++) {
+        board[i][j] = '';
+        document.getElementById('board').children[i * 3 + j].innerText = '';
+      }
+    }
+    currentPlayer = 'X';
+  }
+</script>
+</body>
+</html>

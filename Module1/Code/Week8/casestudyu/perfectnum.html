@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPerfectNumber(num) {
+        let sum = 1; // Khởi tạo tổng với 1, vì 1 luôn là một ước số dương của mọi số.
+
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) {
+                sum += i;
+                if (i !== num / i) {
+                    sum += num / i;
+                }
+            }
+        }
+
+        return sum === num;
+    }
+
+    function findFirstNPerfectNumbers(n) {
+        const perfectNumbers = [];
+        let num = 2; // Bắt đầu từ số 2, vì số 1 không được xem xét.
+
+        while (perfectNumbers.length < n) {
+            if (isPerfectNumber(num)) {
+                perfectNumbers.push(num);
+            }
+            num++;
+        }
+
+        return perfectNumbers;
+    }
+
+    const numberOfPerfectNumbers = 20;
+    const firstNPerfectNumbers = findFirstNPerfectNumbers(numberOfPerfectNumbers);
+
+    console.log("20 số hoàn hảo đầu tiên là:", firstNPerfectNumbers);
+
+</script>
+</body>
+</html>

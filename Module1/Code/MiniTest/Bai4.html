@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        th{
+            width: 350px;
+            height: 50px;
+        }
+        td{
+            text-align: center;
+        }
+        #name{
+            margin-left: 33%;
+        }
+    </style>
+</head>
+<body>
+<div id="name">
+    <button onclick="newPhone()" class="student" style="margin-left: 18.5%"> Thêm mới điện thoại </button>
+</div>
+<span id="studentShow" style="margin-left: 43%"> <b>Hiển thị danh sách điện thoại</b></span>
+<span id="show" style="margin-left: 40%"></span>
+<script>
+  class phone{
+    constructor(idPhone, name, local, safaRy) {
+      this.idPhone = idPhone;
+      this.name = name;
+      this.local = local;
+      this.safaRy = safaRy;
+      this.getId = function (){
+        return this.idPhone;
+      }
+      this.getName = function (){
+        return this.name;
+      }
+      this.getLocal = function (){
+        return this.local;
+      }
+      this.getSa = function (){
+        return this.safaRy;
+      }
+      this.setId = function (idPhone){
+         this.idPhone = idPhone;
+      }
+      this.setName = function (name){
+         this.name = name;
+      }
+      this.setLocal = function (local){
+         this.local = local;
+      }
+      this.setSa = function (safaRy){
+         this.safaRy = safaRy;
+      }
+      this.toString = function (){
+      }
+    }
+  }
+  let phone1 = new phone(1,"iphone 13 pro max", "Apple", 30);
+  let phone2 = new phone(2,"iphone 14 pro max", "Apple", 60);
+  let phone3 = new phone(3,"iphone 15 pro max", "Apple", 90);
+  let cellPhone= [];
+  cellPhone.push(phone1,phone2,phone3);
+  let show = document.getElementById("studentShow");
+  show.addEventListener("click", displayA);
+  function displayA(){
+      let table = '<table style="border: 1px solid black; border-collapse: collapse" border="1">';
+      table += '<tr>'+'<th>'+'Mã Điện thoại'+'</th>'
+          + '<th>'+'Tên'+'</th>'
+          + '<th>'+'Hãng'+'</th>'
+          + '<th>'+'Giá( Triệu )'+'</th>'
+          +'</tr>';
+      for(let i =0; i<cellPhone.length;i++) {
+          table += '<tr>' + '<td>' + cellPhone[i].getId() + '</td>'
+              + '<td>' + cellPhone[i].getName() + '</td>'
+              + '<td>' + cellPhone[i].getLocal() + '</td>'
+              + '<td>' + cellPhone[i].getSa() + '</td>'
+              + '</tr>';
+      }
+      table += '</table>';
+      trans(cellPhone);
+      document.getElementById('show').innerHTML=table;
+  }
+  function newPhone() {
+      let idPhone = prompt("Nhập mã điện thoại: ");
+      let name = prompt("Nhập tên điện thoại: ");
+      let local = prompt("Nhập nơi sản xuất: ");
+      let salary = prompt("Nhập giá của điện thoại: ");
+      if(idPhone === "" || name === "" || local === "" || salary === ""){
+          alert("Bạn đã nhập thiếu thông tin của điện thoại!! Vui lòng nhập lại.");
+      }
+      else{
+          let newPhone = new phone(idPhone, name, local, salary);
+          cellPhone.push(newPhone);
+      }
+      displayA();
+  }
+  function swap(a,b){
+      let c = a;
+      a = b;
+      b = c;
+  }
+  function trans(arr){
+    for (let i =0; i< arr.length; i++){
+        for (let j =0; j < arr.length; j++){
+            if ( arr[i].getName().toLowerCase() > arr[j].getName().toLowerCase()){
+                swap(arr[i].getName(),arr[j].getName());
+            }
+        }
+    }
+      return arr;
+  }
+</script>
+</body>
+</html>

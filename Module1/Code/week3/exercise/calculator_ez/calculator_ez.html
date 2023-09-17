@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="calculator_ez.css">
+</head>
+<body>
+<form name="inform">
+  <div class="form">
+      <div class="text">
+        <input type="text" name="input_text" class="texts">
+      </div>
+      <section class="buttons-container">
+        <div class="buttons">
+          <input class="button" type="button" name="button1" value="1" onclick="inclick(button1.value)">
+          <input class="button" type="button" name="button2" value="2" onclick="inclick(button2.value)">
+          <input class="button" type="button" name="button3" value="3" onclick="inclick(button3.value)">
+          <input class="button" type="button" name="buttonplus" value="+" onclick="inclick(buttonplus.value)">
+        </div>
+        <div class="buttons">
+          <input class="button" type="button" name="button4" value="4" onclick="inclick(button4.value)">
+          <input class="button" type="button" name="button5" value="5" onclick="inclick(button5.value)">
+          <input class="button" type="button" name="button6" value="6" onclick="inclick(button6.value)">
+          <input class="button" type="button" name="buttonapart" value="-" onclick="inclick(buttonapart.value)">
+        </div>
+        <div class="buttons">
+          <input class="button" type="button" name="button7" value="7" onclick="inclick(button7.value)">
+          <input class="button" type="button" name="button8" value="8" onclick="inclick(button8.value)">
+          <input class="button" type="button" name="button9" value="9" onclick="inclick(button9.value)">
+          <input class="button" type="button" name="buttoncore" value="*" onclick="inclick(buttoncore.value)">
+        </div>
+        <div class="buttons">
+          <input class="button" type="button" name="buttonC" value="C" onclick="inclick(buttonC.value)">
+          <input class="button" type="button" name="button0" value="0" onclick="inclick(button0.value)">
+          <input class="button" type="button" name="buttonequal" value="=" id="kq" >
+          <input class="button" type="button" name="buttondivide" value="/" onclick="inclick(buttondivide.value)">
+        </div>
+      </section>
+  </div>
+    </form>
+<script>
+ function inclick(texIn){
+   inform.input_text.value = inform.input_text.value + texIn;
+ }
+ let a = document.getElementById("kq");
+ a.addEventListener("click",calculate)
+ function calculate(){
+   if (inform.input_text.value == ""){
+     alert("Pleased enter numbers");
+   }
+   else {
+     inform.input_text.value = eval (inform.input_text.value);
+   }
+ }
+ let btn = inform.buttonC;
+ btn.addEventListener('click', functiona)
+ function functiona(){
+   inform.input_text.value = "";
+ }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt("how many number in array : "));
+    let text = []
+    let numberT  = 0;
+    for (let i = 0; i< num; i++){
+        text.push(prompt("add number in to array : "));
+    }
+console.log(text);
+    for (let i = 0; i < num; i++) {
+        console.log(typeof text[i]);
+        if (!isNaN(parseInt(text[i]))) {
+            numberT++;
+        }
+    }
+
+    console.log(numberT);
+</script>
+</body>
+</html>

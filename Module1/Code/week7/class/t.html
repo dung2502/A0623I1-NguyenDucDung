@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function timeConversion(s){
+        let time = s.split(':');
+        let hours = parseInt(time[0]);
+        let mini = parseInt(time[1]);
+        let secoAndAP =time[2].split(/(AM|PM)/);
+        let amAndPm = secoAndAP[1];
+        let sec = parseInt(secoAndAP[0]);
+        if ( amAndPm === 'AM' && hours === 12){
+            hours = 0;
+        }
+        if ( amAndPm === 'PM' && hours !== 12){
+            hours += 12;
+        }
+        let timeHour = String(hours).padStart(2,'0');
+        let timeMini = String(mini).padStart(2,'0');
+        let timeSec = String(sec).padStart(2,'0');
+        console.log(timeHour + ':' + timeMini + ':' +timeSec);
+    }
+    let s = '12:01:00PM';
+    let a =  '12:01:00AM';
+    let c = '07:05:45PM';
+    timeConversion(s);
+    timeConversion(a);
+    timeConversion(c);
+    let ar = '45';
+    let pas = ar.padStart(2,'0');
+    console.log(pas);
+    // let time = s.split(':');
+    // console.log(time);
+    // let sc = time[2];
+    // let test = sc.substring(2,4);
+    // console.log(test);
+    // let test1 = sc.substring(0,2);
+    // console.log(test1);
+</script>
+</body>
+</html>

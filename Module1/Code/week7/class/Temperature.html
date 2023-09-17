@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let Temperature = function (c){
+      this.c = c;
+        this.getC = function(){
+          return c;
+        }
+        this.transferF = function(){
+          if(c < -273){
+            return false;
+          }
+          else{
+            return (9 * c) / 5 + 32;
+          }
+        }
+        this.transferK = function(){
+          if(c < -273){
+            return false;
+          }
+          else{
+            return c + 273.15;
+          }
+        }
+  }
+  let c = new Temperature(parseInt(prompt("Nhập độ C mà bạn muốn đổi vào: ( c > -274)")));
+  let transferF = c.transferF();
+  let transferK = c.transferK();
+console.log("Kelvin = " + transferK + "; F = " + transferF);
+</script>
+</body>
+</html>

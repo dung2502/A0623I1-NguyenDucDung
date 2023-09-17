@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let numB = 10;
+  let arr = []
+  for (let i = 0; i< numB; i++){
+    arr.push(parseInt(prompt("add number in to array: ")));
+  }
+  let v = parseInt(prompt(" Let add V number: "))
+    for (let i = 0; i < numB; i++) {
+      if ( arr[i] === v) {
+        alert("V is in the array");
+       for (let j = i; j < numB; j++){
+         arr[j] = arr[j+i];
+       }
+       arr[numB -1]=0;
+      }
+    }
+  console.log(arr);
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let numA = parseInt(prompt("number in array A : "));
+  let a = []
+  for (let i = 0; i< numA; i++){
+    a.push(parseInt(prompt("add number in to array A: ")));
+  }
+  let numB = parseInt(prompt("number in array B: "));
+  let b = []
+  for (let i = 0; i< numB; i++){
+    b.push(parseInt(prompt("add number in to array B: ")));
+  }
+  let c =[...a, ...b];
+  console.log(c);
+
+</script>
+</body>
+</html>

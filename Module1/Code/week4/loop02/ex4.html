@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  for(let i = 1; i <= 7; i++ ) {
+    let square = "";
+    for (let j = 1; j <= 21; j++) {
+      if (i === 1 || i === 7) {
+        square += "*";
+      }
+      else if ( 2 <= j && j <= 20) {
+          square += "&nbsp&nbsp;";
+        }
+      else {
+          square +=  "*";
+        }
+    }
+    document.write(square + "<br>")
+  }
+</script>
+</body>
+</html>

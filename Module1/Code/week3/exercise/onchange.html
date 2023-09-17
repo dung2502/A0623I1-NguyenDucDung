@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onchange</title>
+</head>
+<body>
+<h2>Onchange</h2><br>
+<form id="form">
+  <input type="radio" name="car" value="lambor">lambor
+  <input type="radio" name="car" value="merc">merc
+  <input type="radio" name="car" value="bycle">bycle
+</form>
+<select id="mySelect" >
+  <option value="Audi"> Audi</option>
+  <option value="Car"> Car</option>
+  <option value="Toyota"> Toyota</option>
+  <option value="Lamborghini"> Lamborghini</option>
+  <option value="Merc"> Merc</option>
+  <option value="Bycle"> Bycle</option>
+</select><br>
+<h2>addeventListener</h2><br>
+<select id="MyChoice" onchange="do_what()">
+  <option value="Audi"> Audi</option>
+  <option value="Car"> Car</option>
+  <option value="Toyota"> Toyota</option>
+  <option value="Lamborghini"> Lamborghini</option>
+  <option value="Merc"> Merc</option>
+  <option value="Bycle"> Bycle</option>
+</select>
+<script>
+  function do_what(){
+    var Whatcar=document.getElementById("MyChoice").value;
+    alert(Whatcar);
+  }
+  var Car=document.getElementById("mySelect");
+  Car.addEventListener("change",changeFunction);
+  function changeFunction(){
+    var voice=document.getElementById("mySelect").value;
+    alert(voice);
+  }
+  var car1=document.getElementById("form");
+  car1.addEventListener("change",changecar);
+  function changecar(){
+    var voice1=document.getElementById("form").value;
+    alert(voice1);
+  }
+</script>
+</body>
+</html>

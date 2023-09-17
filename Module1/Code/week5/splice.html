@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arrs = ["tim", 'bot', 'jane'];
+  let arrs1 = ["do ra e mon"];
+
+
+
+  let index = arrs.indexOf("bot");
+  console.log(index);
+
+
+
+  let total = arrs.concat(arrs1);
+  console.log(total);
+  console.log(arrs);
+  arrs.splice(1,2);
+  console.log(arrs);
+
+
+
+  let student =[ {
+    id: 1,
+    name: "Nguyen van B",
+    address: "Hanoi"
+
+  },
+    {
+      id: 2,
+      name: "Nguyen van C",
+      address: "Hanoi"
+
+    },
+    {
+      id: 3,
+      name: "Nguyen van A",
+      address: "Hanoi"
+
+    }
+  ];
+  let student1 =[
+    {
+      id: 4,
+      name: "Nguyen van D",
+      address: "Hanoi"
+
+    },
+    {
+      id: 5,
+      name: "Nguyen van E",
+      address: "Hanoi"
+
+    }
+  ];
+  let newstudent = student1.map(function (studnet1) {
+    if (studnet1.id === 4){
+      studnet1.name = "Pig";
+    }
+    return animal;
+  })
+  console.log(newstudent);
+
+
+  let newAa = student.concat(student1);
+  console.log(newAa);
+
+
+
+  console.log(student);
+  for (let i =0; i <student.length; i++){
+    if (student[i].id === 2){
+      student.splice(i,2);
+    }
+  }
+  console.log(student);
+
+
+</script>
+</body>
+</html>

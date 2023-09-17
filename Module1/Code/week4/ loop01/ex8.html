@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="play"  type="button" value="play" name="play" style="margin-top: 50%; margin-left: 50%">
+<input  type="reset" value="reset" name="reset" style="margin-left: 20px">
+<script>
+let i = document.getElementById("play");
+i.addEventListener("click",playgame);
+function playgame(){
+  alert("Tro choi doan so");
+  let first = parseInt(prompt("Nhap so dau: "));
+  let last = parseInt(prompt("Nhap so cuoi: "));
+
+  let number = Math.floor(Math.random()*(last - first + 1))+first;
+  let test = parseInt(prompt("Nhap so ban doan: "));
+  console.log(number);
+  for (let turn = 0; turn < 3; turn++ ){
+    if (test === number){
+      alert("ban da doan dung");
+      break;
+    }
+    else if(test > number){
+      alert(" so ban chon lon hon so can tim");
+      test = parseInt(prompt("Nhap so khac: "));
+    }
+    else{
+      alert(" so ban chon nho hon so can tim");
+      test = parseInt(prompt("Nhap so khac: "));
+    }
+  }
+}
+</script>
+</body>
+</html>

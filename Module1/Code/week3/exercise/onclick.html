@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3 id="click" > HÃY NHẤN VÀO EM ĐI !!!! </h3>
+</body>
+</html>
+<script>
+  var click=document.getElementById("click");
+  click.addEventListener("click",clickme);
+  click.addEventListener("mouseover",mouseover);
+  click.addEventListener("mouseout",mouseout);
+  function clickme(){
+    alert("Á Á ANH NHẤ VÀO EM RỒI !!!");
+  }
+  function mouseover(){
+    document.getElementById("click").style.color="red";
+
+  }
+  function mouseout(){
+    document.getElementById("click").style.color="black";
+
+  }
+</script>

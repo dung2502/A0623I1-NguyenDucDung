@@ -1,0 +1,25 @@
+.title{
+    background-color: lightblue;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    color: blue;
+    
+}
+.buttons{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.form{
+    position: absolute;
+    border-style: solid;
+    border-width: thin;
+    background-color: #ffff99;
+    padding: 5px;
+}
+.nd{
+    color: blue;
+    margin-right: 130px;
+    margin-top: 5px;
+}

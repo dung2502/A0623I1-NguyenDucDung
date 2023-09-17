@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class remote {
+    constructor(id) {
+      this.id =id;
+      this.channel = function (arr,television){
+          let a = parseInt(prompt("Enter a channel ( channel 1 to channel 10 ): "));
+                  return television.channelShow = arr[a-1];
+      };
+      this.volume = function (television){
+      television.volumeShow ++;
+      };
+      this.offTv = function (tv){
+          if ( tv.now === 'on' ){
+              tv.now = 'off';
+          }
+      }
+    }
+  }
+
+  class television {
+    constructor( channelShow, volumeShow, now) {
+        this.channelShow = channelShow;
+        this.volumeShow = volumeShow;
+        this.now = now;
+        this.change = function (arr){
+            let a = prompt(" ^ or v ")
+                for (let i = 0; i < arr.length; i++){
+                        if (this.channelShow === arr[i]) {
+                            if (a === 'v') {
+                                console.log(arr[i - 1]);
+                                return this.channelShow = arr[i - 1];
+                            }
+                            else if(a === '^'){
+                                console.log(arr[i + 1]);
+                                return this.channelShow = arr[i + 1];
+                            }
+                    }
+            }
+        }
+        this.volumeAdd = function (){
+            return this.volumeShow++;
+        }
+        this.remoteOff = function (){
+           return this.now = 'off';
+        }
+    }
+  }
+  let arrTest = ['Channel 7', 'Channel 8'];
+  let televisionTest = new television(arrTest[0], 70, "on");
+  let remoteTest = new remote(1);
+ televisionTest.change(arrTest);
+</script>
+</body>
+</html>

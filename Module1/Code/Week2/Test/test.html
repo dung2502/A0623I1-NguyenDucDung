@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+
+<form action="/action_page" method="post">
+  <fieldset>
+    <legend>Personal Information</legend>
+  First Name:<br>
+  <input type = "text" name = "firstname" value="Plesead write something"><br>
+  Last Name<br>
+  <input type = "password" name = "lastname"><br>
+  <input type ="submit" name ="OK" style="background-color:aqua">
+  <input type ="reset">
+  </fieldset>
+</form><br><br>
+<form>
+  YOUR DREAM IS => <br>
+  <input type ="radio" name ="job" value="Doctor" > Doctor<br>
+  <input type ="radio" name = "job" value="Police" checked> Police<br>
+  <input type = "checkbox" name = "job" value ="Teacher" > Techer<br>
+  <input type = "checkbox" name = "job" value ="Teacher" > Techer<br>
+  <input type = "submit" name="OK">
+  <input type = "reset"> <br>
+  <input type="button">
+  Chose your color =>
+  <input type ="color"><br>
+  <input type="date"><br>
+  <input type="datetime-local">
+  <input type="email"><br>
+  <input type="file" style="background-color: red"><br>
+  <input type="hidden">
+  <input type="image">
+  <input type="month">
+  <input type="range">
+  <input type="number">
+  <input type="tel">
+  <input type="time">
+  <input type="url">
+  <textarea cols="50" rows="4">This is a very very long text text text text text text text text text text text text </textarea><br>
+  <b>DROP-DOWN</b><br>
+  <select name="city">
+    <option value="HN">Hà Nội</option>
+    <option value="HP">Hải Phòng</option>
+    <option value="HU">Huế</option>
+    <option value="DN">Đà Nẵng</option>
+    <option value="SG">Sài Gòn</option>
+  </select><br>
+  <b>LIST</b><br>
+  <select name="city" multiple>
+    <option value="HN">Hà Nội</option>
+    <option value="HP">Hải Phòng</option>
+    <option value="HU">Huế</option>
+    <option value="DN">Đà Nẵng</option>
+    <option value="SG">Sài Gòn</option>
+  </select><br>
+  <b></b>
+</form><br><br>
+
+
+<form action="https://www.google.com.vn/" target="_blank">
+  <input type="text" name="q"/>
+  <input type="submit" value="Tìm kiếm"/>
+</form>
+<br><br>
+
+
+
+
+
+
+
+<table border="1">
+  <tr>
+    <th>Male or Female</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Phone Number</th>
+  </tr>
+  <tr>
+    <td rowspan="3">male</td>
+    <td>jame</td>
+    <td>24</td>
+    <td>0123</td>
+  </tr>
+  <tr>
+    <td>Tim</td>
+    <td>24</td>
+    <td>0123</td>
+    </td>
+  </tr>
+  <tr>
+    <td>Tony</td>
+    <td>24</td>
+    <td>0123</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Female</td>
+    <td>Lucy</td>
+    <td>24</td>
+    <td>0123</td>
+  </tr>
+  <tr>
+    <td>Erza</td>
+    <td>24</td>
+    <td>0123</td>
+  </tr>
+  <tr>
+    <td colspan="4">Who is die first ?</td>
+  </tr>
+</table>
+<video controls width="50%" height="350" autoplay poster="video/imager_13_607_700.jpg" muted>
+  <source src="video/videoplayback.mp4"  >
+</video><br><br><br>
+
+<form >
+  <h2><b style="font-size:large">Order Form</b></h2><br>
+  <b>What would you like to buy</b><br><br>
+  <select name="food">
+    <option value="a">Orange</option>
+    <option value="b">Chicken</option>
+    <option value="c">Icecream</option>
+    <option value="d">Candy</option>
+    <option value="e">Fish</option>
+  </select><br><br>
+  <b>How many would you like to orde?</b><br><br>
+  <label><input type="radio" name="quantity" value="1" checked><b>1 - $10</b></label><br>
+  <label><input type="radio" name="quantity" value="2" ><b>2 - $20</b></label><br>
+  <label><input type="radio" name="quantity" value="3" ><b>3 - $25</b></label><br><br>
+  <b> Name </b><br><br>
+  <input type = "text" name = "firstname" value="Firstname">
+  <input type = "text" name = "lastname" value="Lastname"><br><br>
+  <p><b>Email</b></p>
+  <input type="email" name="email" value="abc@gmail.com">
+  <p><b>Phone Number </b></p>
+  <input type = "text" name="phone1" size="5"/> -
+  <input type = "text" name="phone2" size="5"/> -
+  <input type = "text" name="phone3" size="5"/>
+
+</form>
+
+<h2>What Can JavaScript Do?</h2>
+<p id="demo">JavaScript can change HTML content.</p>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+<br>
+<h2>What Can JavaScript Do?</h2>
+<p>JavaScript can change HTML attributes.</p>
+<p>In this case JavaScript changes the src (source) attribute of an image.</p>
+<button  onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button>
+<img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
+<button onclick="this.innerHTML=Date()">The time is?</button>
+<script>
+let number = 5;
+
+if (number++ > 5) {
+number += 1;
+  document.write('number' +number);
+} else {
+number -= 1;
+  document.write('number' +number);
+}
+</script>
+</body>
+</html>

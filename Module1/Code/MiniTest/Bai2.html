@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let text = prompt("Nhap chuoi ky tu: ");
+  let upPer = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  function checkUp(){
+    let total = 0;
+    for (let i = 0; i < text.length; i++){
+      if (upPer.indexOf(text[i]) !== -1){
+        total++;
+      }
+    }
+      if (total=== 0){
+          document.write("The string is not contain upper char.");
+      }
+    return total;
+  }
+      document.write(''+checkUp());
+</script>
+</body>
+</html>

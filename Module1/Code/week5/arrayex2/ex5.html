@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let numA = prompt("number in array A : ");
+  let numB = prompt("number in array B: ");
+  let correct = 1;
+  console.log(numA);
+  console.log(numB);
+  if(numA.length !== numB.length) {
+    alert("Hai chuỗi khác nhau!");
+  }
+  else {
+    for (let i = 0; i < numA.length; i++) {
+      if (numA.charAt(i) !== numB.charAt(i)) {
+        correct = 0;
+      }
+    }
+    if (correct === 1) {
+      alert("Hai chuỗi giống nhau");
+    } else {
+      alert("Hai chuỗi khác nhau");
+    }
+  }
+</script>
+</body>
+</html>

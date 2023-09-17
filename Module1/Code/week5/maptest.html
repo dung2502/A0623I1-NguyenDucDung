@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  let a = [12,false,"text"];
+  let x = [1, 3, 5];
+  x[0] = 15;
+  x[3] = 77;
+  console.log(x);
+  console.log(a);
+  let student1 =[
+    {
+      id: 4,
+      name: "Nguyen van D",
+      address: "Hanoi"
+
+    },
+    {
+      id: 5,
+      name: "Nguyen van E",
+      address: "Hanoi"
+
+    }
+  ];
+  let newstudent = student1.map(function (studnet1) {
+    if (studnet1.id === 4){
+      studnet1.name = "Pig";
+    }
+    return studnet1;
+  })
+  console.log(newstudent);
+</script>
+</body>
+</html>

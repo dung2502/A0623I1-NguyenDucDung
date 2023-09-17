@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let text = prompt("Nhap chuoi ky tu: ");
+  let upPer = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  let loWer = 'abcdefghijklmnopqrstuvwxyz';
+  let total = [];
+  for (let i = 0; i < text.length; i++){
+  if (upPer.indexOf(text[i]) !== -1){
+    total.push(text[i].toLowerCase());
+  }
+  else if (loWer.indexOf(text[i]) !== -1){
+    total.push(text[i].toUpperCase());
+  }
+  else{
+    total.push(text[i]);
+  }
+  }
+  document.write(total.join(''));
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let kwh = parseInt(prompt("So kWh ban da su dung: "));
+  if(kwh > 0 && kwh <= 50){
+      let giadien = kwh * 1728;
+      document.write(giadien + " vnd");
+  }
+  else if(kwh <= 100){
+      let giadien = kwh * 1786
+      document.write(giadien + " vnd");
+  }
+  else if(kwh <= 200){
+      let giadien = kwh * 2074
+      document.write(giadien + " vnd");
+  }
+  else if(kwh <= 300){
+      let giadien = kwh * 2612
+      document.write(giadien + " vnd");
+  }
+  else if(kwh <= 400){
+      let giadien = kwh * 2919
+      document.write(giadien + " vnd");
+  }
+  else{
+      let giadien = kwh * 3015
+      document.write(giadien + " vnd");
+  }
+</script>
+</body>
+</html>

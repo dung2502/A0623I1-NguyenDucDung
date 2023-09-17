@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let number = parseInt(prompt("Hay nhap vao so duong ban muon tinh giai thua: "));
+  let total = 1;
+  if (number === 0){
+    number = parseInt(prompt("Hay nhap vao so duong ban muon tinh giai thua: "));
+  }
+  else{
+    for (let i = 1; i<= number; i++){
+        total *= i ;
+    }
+  }
+  document.write(total);
+</script>
+</body>
+</html>

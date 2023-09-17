@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let doanhso = parseInt(prompt("Doang số bán hàng là: "));
+  let hoahong = 0;
+  if( doanhso <= 1000){
+    hoahong = doanhso * 0.05;
+    document.write("Hoa hồng bạn nhận được là: " + hoahong);
+  }
+  else if( doanhso <= 5000){
+    hoahong = doanhso * 0.1;
+    document.write("Hoa hồng bạn nhận được là: " + hoahong);
+  }
+  else{
+    hoahong = doanhso * 0.15;
+    document.write("Hoa hồng bạn nhận được là: " + hoahong);
+  }
+</script>
+</body>
+</html>

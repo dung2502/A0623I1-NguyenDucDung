@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>caculator</title>
+</head>
+<body>
+<form onsubmit="return false" >
+      <div >
+        <input type="text" name="number" id="number1" style="margin-left: 5px">
+        <input type="text" name="number" id="number2" style="margin-left: 45px">
+      </div><br>
+      <div>
+        <button name="addition" value="addition" id="addtion" style="margin-left: 5px">Addition(+)</button>
+        <button name="subtraction" value="subtracion" id="subtration" style="margin-left: 5px">Subtraction(-)</button>
+        <button name="multiplication" value="multiplication" id="multiplication" style="margin-left: 5px">Multiplication(X)</button>
+        <button name="division" value="division" id="division" style="margin-left: 5px">Division(/)</button>
+      </div><br>
+      <span id="result" style="margin-top: 100px; color: red" ></span>
+  </form>
+<script>
+  let addition = document.getElementById("addtion");
+  addition.addEventListener("click",do_addition);
+  let subtracion = document.getElementById("subtration");
+  subtracion.addEventListener("click",do_subtration);
+  let multiplication = document.getElementById("multiplication");
+  multiplication.addEventListener("click",do_multiplication);
+  let division = document.getElementById("division");
+  division.addEventListener("click",do_division);
+  function do_addition(){
+    let ina = document.getElementById("number1").value;
+    let inb = document.getElementById("number2").value;
+    let a = parseInt(ina);
+    let b = parseInt(inb);
+    let result_division = a + b;
+    document.getElementById("result").innerHTML = "Result Division : " + result_division;
+  }
+  function do_subtration(){
+    let ina = document.getElementById("number1").value;
+    let inb = document.getElementById("number2").value;
+    let a = parseInt(ina);
+    let b = parseInt(inb);
+    let result_division = a - b;
+    document.getElementById("result").innerHTML = "Result Division : " + result_division;
+  }
+  function do_multiplication(){
+    let ina = document.getElementById("number1").value;
+    let inb = document.getElementById("number2").value;
+    let a = parseInt(ina);
+    let b = parseInt(inb);
+    let result_division = a * b;
+    document.getElementById("result").innerHTML = "Result Division : " + result_division;
+  }
+  function do_division(){
+    let ina = document.getElementById("number1").value;
+    let inb = document.getElementById("number2").value;
+    let a = parseInt(ina);
+    let b = parseInt(inb);
+    let result_division = a / b;
+    document.getElementById("result").innerHTML = "Result Division : " + result_division;
+  }
+
+</script>
+</body>
+</html>
