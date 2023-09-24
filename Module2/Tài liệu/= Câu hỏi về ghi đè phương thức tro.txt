@@ -1,0 +1,10 @@
+=> Câu hỏi về ghi đè phương thức trong java
+Có ghi đè được phương thức static không?
+Không, phương thức static không thể ghi đè được, bằng chứng là đa hình runtime, vấn đề này sẽ được học trong bài sau.
+
+Tại sao không ghi đè được phương thức static?
+Vì phương thức static được ràng buộc với class còn phương thức instance được ràng buộc với đối tượng. Static thuộc về vùng nhớ class còn instance thuộc về vùng nhớ heap.
+
+Có ghi đè phương thức main được không?
+Không, vì main là phương thức static.
+
