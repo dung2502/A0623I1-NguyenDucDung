@@ -1,0 +1,6 @@
+G, G001, Toan, 2020, Giao Duc, 120, 200, 50, 7
+G, G002, Ly, 2020, Giao Duc, 120, 120, 50, 7
+T, T003, Thep Da toi The Day, 2015, Su That, 200, 200, 20, Chien tranh
+T, T005, Sherlock Holme, 2010, khoa học, 300, 200, 10, trinh tham
+T, T006, Hong lau Mong, 2020, thanh nien, 120, 120, 50, Tinh Cam
+G, G007, Bai Tap Ly, 2020, Giao Duc, 120, 20, 30, 7
