@@ -1,0 +1,16 @@
+KẾ THỪA
+
+1. Kế thừa là lớp con sử dụng lại của lớp cha
+2. Quan hệ giữa lớp con và cha là is - a
+3. Trong kế thừa, lớp cha được gọi là (parent class, base class'Lớp cơ sở', super  class). Lớp con( child class, derived class 'lớp dẫn xuất', subclass) 
+4. Lớp con kế thừa tất cả các thành phần của lớp cha trừ các thành phân đc khai báo là private
+5. Trong java thì không cho đa kế thừa do đó có 3 cách kế thừa phổ biến: Single, Multilevel, Hierarchical
+6. Cú pháp kế thừa:
+	child class extends parent class{}
+
+ÉP KIỂU
+
+1. Ép kiểu là chuyển đổi tham chiếu của đối tượng thuộc loại này sang thành tham chiếu đối tượng loại khác.
+2. Có 2 kiểu ép kiểu chính: Implicit casting và Explicit casting
+3. Toán tử instanceof dùng để kiểm tra kiểu của 1 đối tượng => giá trị trả về là dang boolen
+4. Từ khóa final => Dùng để ngăn ngừa kế thừa 
