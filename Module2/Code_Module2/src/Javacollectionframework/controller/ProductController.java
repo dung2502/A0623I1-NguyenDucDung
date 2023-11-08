@@ -1,4 +1,4 @@
-package Javacollectionframework.controller;
+package Javacollectionframework.Management.controller;
 
 import Javacollectionframework.bo.ProductService;
 import Javacollectionframework.bo.ProductServiceImp;
