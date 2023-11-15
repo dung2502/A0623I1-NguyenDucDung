@@ -1,7 +1,7 @@
-package Javacollectionframework.dao;
+package javacollectionframework.dao;
 
 
-import Javacollectionframework.dto.Product;
+import javacollectionframework.dto.Product;
 
 public interface ProductRepository {
     int getSize();

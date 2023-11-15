@@ -1,8 +1,8 @@
-package Javacollectionframework.Management.controller;
+package javacollectionframework.controller;
 
-import Javacollectionframework.bo.ProductService;
-import Javacollectionframework.bo.ProductServiceImp;
-import Javacollectionframework.dto.Product;
+import javacollectionframework.bo.ProductService;
+import javacollectionframework.bo.ProductServiceImp;
+import javacollectionframework.dto.Product;
 
 import java.util.Scanner;
 

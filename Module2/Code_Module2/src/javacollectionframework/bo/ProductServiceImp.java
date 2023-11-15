@@ -1,9 +1,9 @@
-package Javacollectionframework.bo;
+package javacollectionframework.bo;
 
 
-import Javacollectionframework.dao.ProductRepository;
-import Javacollectionframework.dao.ProductRepositoryImp;
-import Javacollectionframework.dto.Product;
+import javacollectionframework.dao.ProductRepository;
+import javacollectionframework.dao.ProductRepositoryImp;
+import javacollectionframework.dto.Product;
 public class ProductServiceImp implements ProductService{
     private final ProductRepository repository = new ProductRepositoryImp();
 

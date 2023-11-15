@@ -1,6 +1,6 @@
-package Javacollectionframework.view;
+package javacollectionframework.view;
 
-import Javacollectionframework.controller.ProductController;
+import javacollectionframework.controller.ProductController;
 
 import java.util.Scanner;
 

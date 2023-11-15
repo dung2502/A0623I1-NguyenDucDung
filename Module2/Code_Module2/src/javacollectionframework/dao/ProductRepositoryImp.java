@@ -1,6 +1,6 @@
-package Javacollectionframework.dao;
+package javacollectionframework.dao;
 
-import Javacollectionframework.dto.Product;
+import javacollectionframework.dto.Product;
 
 import java.util.ArrayList;
 import java.util.Collections;
