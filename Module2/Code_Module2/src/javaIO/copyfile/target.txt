@@ -1,0 +1,5 @@
+hello
+how
+are
+you
+Character num: 3
