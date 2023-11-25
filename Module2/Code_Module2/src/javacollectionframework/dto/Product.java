@@ -36,6 +36,7 @@ public class Product implements Comparable<Product> {
 
     @Override
     public int compareTo(Product o) {
+
         return Integer.compare(this.getPrice(), o.getPrice());
     }
 }

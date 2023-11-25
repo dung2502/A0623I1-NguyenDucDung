@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class ProductRepositoryImp implements ProductRepository {
     Scanner sc = new Scanner(System.in);
-    private static final ArrayList<Product> productArrayList = new ArrayList<>();;
+    private static final ArrayList<Product> productArrayList = new ArrayList<>();
     static {
         productArrayList.add(new Product("Hoodie", "AH", 200000));
         productArrayList.add(new Product("Jeans", "QJ", 120000));
@@ -85,6 +85,7 @@ public class ProductRepositoryImp implements ProductRepository {
     }
     @Override
     public void sortProductList() {
+
         Collections.sort(productArrayList);
     }
 }
