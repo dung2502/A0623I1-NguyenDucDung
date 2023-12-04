@@ -1,6 +1,6 @@
-package javacollectionframework.dto;
+package javacollectionframework.model;
 
-public class Product implements Comparable<Product> {
+public class Product {
     private String name;
     private String id;
     private int price;
@@ -31,12 +31,7 @@ public class Product implements Comparable<Product> {
 
     @Override
     public String toString() {
-        return "Product{'" + name + "', id = " + id +", price = " + price + '}';
+        return String.format("%s,%s,%s", name, id,price);
     }
 
-    @Override
-    public int compareTo(Product o) {
-
-        return Integer.compare(this.getPrice(), o.getPrice());
-    }
 }
