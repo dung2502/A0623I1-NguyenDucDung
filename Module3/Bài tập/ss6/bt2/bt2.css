@@ -1,0 +1,17 @@
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+#header{
+    font-size: 30px;
+    order-bottom: 1px solid black;
+}
+#text{
+    text-align: left;
+}
+.Content{
+    text-indent: 50px;
+}
+.color{
+    color: blue;
+}
