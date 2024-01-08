@@ -1,0 +1,25 @@
+#header{
+    background-color: yellow;
+    height: 100px;
+    width: 100%;
+}
+
+#main{
+    background-color: #0a53be;
+    height: 300px;
+    width: 70%;
+    float: left;
+}
+
+#sidebar{
+    background-color: red;
+    height: 300px;
+    width: 30%;
+    float: left;
+}
+#footer{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    clear: both;
+}

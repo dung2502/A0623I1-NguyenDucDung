@@ -4,39 +4,66 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+<body onload="updateData()">
+<h1>ESP8266 Control Panel</h1>
+
+<h2>Thông tin cảm biến</h2>
+<p id="val"></p>
+
+<h2>Điều khiển Step Thuan</h2>
+<input type="number" id="stepThuan" placeholder="Nhập góc (0-180)" />
+<button onclick="controlStepThuan()">Điều khiển Bước Thuậnn</button>
+
+<h2>Điều khiển Step Nghich</h2>
+<input type="number" id="stepNghich" placeholder="Nhập góc (0-180)" />
+<button onclick="controlStepNghich()">Điều khiển Bước Nghịch</button>
+
 <script>
-  let person ={
-    name : {
-      first: 'Bob',
-      last: 'Smith'
-    },
-    age: 32,
-    interests: ['music', 'skiing'],
-    bio: function(){
-      console.log(this.name.first + '' + this.name.last + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
-    },
-    greeting: function(){
-      console.log('Hi! I\'m ' + this.name.first + '.');
+    var espServer = "172.20.10.4";
+
+    function getSieuAm() {
+        fetch(espServer + "/sensor")
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.text();
+            })
+            .then((data) => {
+                console.log("Anhsanh:", data);
+                document.getElementById("val").innerText = "Khoang cach: " + data;
+            })
+            .catch((error) => console.error("Error:", error));
     }
-  };
-  person.bio();
-  person.greeting();
-   console.log(person['name']['first']);
-   person.age = 45;
-   person['name']['last'] = 'Chrish';
-  console.log('Hi! I\'m ' + person.name.last + '.' );
-  person['eye']='blue';
-  console.log(person.eye)
-  person.farewell = function(){
-    alert("Bye everybody!");
-  };
-  person.farewell();
-  person['eye'];
-  let myDataName = nameInput.value;
-  let myDataValue = nameValue.value;
-  person[myDataName] = myDataValue;
-  let my
+
+    function controlStepThuan() {
+        const angle = document.getElementById("stepThuan").value;
+        fetch(`espServer + /buocThuan?angleThuan=${angle}`)
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                console.log("Step controlled");
+            })
+            .catch((error) => console.error("Error:", error));
+    }
+
+    function controlStepNghich() {
+        const angle = document.getElementById("stepNghich").value;
+        fetch(`espServer + /buocNghich?angleNghich=${angle}`)
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                console.log("Step controlled");
+            })
+            .catch((error) => console.error("Error:", error));
+    }
+    function updateData() {
+        getSieuAm();
+    }
+    setInterval(updateData, 1500);
+    //updateData();
 </script>
 </body>
 </html>

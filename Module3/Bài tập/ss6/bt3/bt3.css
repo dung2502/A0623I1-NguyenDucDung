@@ -1,0 +1,37 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.toc {
+    float: left;
+    width: 20%;
+    padding: 20px;
+    background-color: #f1f1f1;
+    position: fixed;
+}
+
+.toc h5 {
+    margin-bottom: 10px;
+}
+
+.content {
+    float: left;
+    width: 70%;
+    padding: 20px;
+}
+
+.cover-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cover-image img {
+    max-width: 100%;
+    height: auto;
+}
+#photo{
+    max-width: 120px;
+    height: 120px;
+}
