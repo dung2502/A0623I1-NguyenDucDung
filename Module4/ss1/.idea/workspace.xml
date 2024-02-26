@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c51df424-09c6-40b9-84b4-bb5bef2b3c59" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Module2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module2/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Module2/Module2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ss1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/java/com/example/thipart2/Controller/ElementServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/java/com/example/thipart2/DTO/ProductDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/java/com/example/thipart2/Model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/java/com/example/thipart2/Repository/BaseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/java/com/example/thipart2/Repository/IRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/java/com/example/thipart2/Repository/RepositoryImpl/ElementDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/java/com/example/thipart2/Service/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/java/com/example/thipart2/Service/ServiceImpl/ElementBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/room/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/room/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/room/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/images/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/images/image11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/ThiPart2/src/main/webapp/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/java/com/example/thitest/Controller/RoomServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/java/com/example/thitest/DTO/RoomDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/java/com/example/thitest/Model/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/java/com/example/thitest/Repository/BaseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/java/com/example/thitest/Repository/IRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/java/com/example/thitest/Repository/IRoomDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/java/com/example/thitest/Repository/RepositoryImpl/RoomDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/java/com/example/thitest/Service/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/java/com/example/thitest/Service/ServiceImpl/RoomBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/room/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/room/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/images/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/images/image11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/Thitest/src/main/webapp/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/check/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/check/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/check/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/check/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/check/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/check/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/check/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/check/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/end_module/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/end_module/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/end_module/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/end_module/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/end_module/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/end_module/src/main/java/com/example/end_module/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/end_module/src/main/java/com/example/end_module/repository/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/end_module/src/main/java/com/example/end_module/repository/impl/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/java/com/example/teststudent/DTO/StudentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/java/com/example/teststudent/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/java/com/example/teststudent/controller/StudentServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/java/com/example/teststudent/model/Classes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/java/com/example/teststudent/model/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/java/com/example/teststudent/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/java/com/example/teststudent/model/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/java/com/example/teststudent/repository/BaseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/java/com/example/teststudent/repository/IClassesDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/java/com/example/teststudent/repository/IRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/java/com/example/teststudent/repository/IStudentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/java/com/example/teststudent/repository/ITeacherDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/java/com/example/teststudent/repository/RepositoryImpl/ClassDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/java/com/example/teststudent/repository/RepositoryImpl/StudentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/java/com/example/teststudent/service/IClassBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/java/com/example/teststudent/service/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/java/com/example/teststudent/service/IStudentBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/java/com/example/teststudent/service/ServiceImpl/ClassesBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/java/com/example/teststudent/service/ServiceImpl/StudentBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/images/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/images/image11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/student/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/student/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/testStudent/src/main/webapp/student/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/java/com/example/thi/DTO/phongTroDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/java/com/example/thi/controller/PhongTroServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/java/com/example/thi/model/phongTro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/java/com/example/thi/model/thanh_toan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/java/com/example/thi/repository/BaseDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/java/com/example/thi/repository/IPhong_tro_DAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/java/com/example/thi/repository/repositoryImpl/Phong_Tro_DAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/java/com/example/thi/sercvice/IPhong_TroBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/java/com/example/thi/sercvice/Sercvice/Phong_TroBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/phongTro/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/phongTro/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/bootstrap-5.0.2-dist/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/images/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/images/image11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../New folder/thi/src/main/webapp/static/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module2/Code_Module2/src/untitled/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module2/Code_Module2/src/untitled/src/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module2/Code_Module2/src/untitled/src/models/Benh_Nhan_Thuong.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module2/Code_Module2/src/untitled/src/models/Benh_Nhan_Thuong.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module2/Code_Module2/src/untitled/src/models/Benh_Nhan_Vip.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Module2/Code_Module2/src/untitled/src/models/Benh_Nhan_Vip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/testJSP/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/testJSP/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/testJSP/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/testJSP/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/testJSP/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/testJSP/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/testJSP/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/testJSP/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/testJSP/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/testJSP/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/testJSP/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/testJSP/src/main/java/com/example/testjsp/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/testJSP/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Module3/testJSP/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo/src/main/java/com/example/demo/TranslationServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo1/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo1/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo1/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo1/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo1/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo1/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo1/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo1/src/main/java/com/example/demo1/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo1/src/main/java/com/example/demo1/controller/Calculate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo1/src/main/java/com/example/demo1/model/CalculatorServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo1/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New folder/demo1/src/main/webapp/index.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2ctyllcOCmTXqJr8ll90X8cRZ0g" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/Code_Gym/Module4/ss1/demo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c51df424-09c6-40b9-84b4-bb5bef2b3c59" name="Changes" comment="" />
+      <created>1708945324254</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708945324254</updated>
+      <workItem from="1708945325536" duration="68000" />
+      <workItem from="1708945402504" duration="730000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
