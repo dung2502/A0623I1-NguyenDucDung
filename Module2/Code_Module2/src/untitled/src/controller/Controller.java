@@ -1,4 +1,4 @@
-package controller;
+package untitled.src.controller;
 
 import models.Benh_Nhan_Thuong;
 import service.Service;

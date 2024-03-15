@@ -1,5 +1,6 @@
 package com.example.thitest.Service.ServiceImpl;
 
+import com.example.thitest.DTO.RoomDTO;
 import com.example.thitest.Model.Room;
 import com.example.thitest.Repository.IRoomDao;
 import com.example.thitest.Repository.RepositoryImpl.RoomDao;
@@ -21,16 +22,27 @@ public class RoomBO implements IService {
 
     @Override
     public boolean addObj(Room e) {
-        return false;
+
+        return roomDao.addObj(e);
     }
 
     @Override
     public boolean removeObj(int id) {
-        return false;
+        return roomDao.removeObj(id);
     }
 
     @Override
     public boolean updateObj(Room e) {
         return false;
+    }
+
+    @Override
+    public List<RoomDTO> selectAllObjDTO() {
+        return roomDao.selectAllObjDTO();
+    }
+
+    @Override
+    public List<RoomDTO> findRoomByRoomId(String room_id) {
+        return roomDao.findRoomByRoomId(room_id);
     }
 }

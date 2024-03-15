@@ -3,16 +3,16 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-    <title>Student Management Application</title>
+    <title>Management Application</title>
     <link rel="stylesheet" href="../static/bootstrap-5.0.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
 <div class="background-form container">
     <div align="center">
-        <h1>Student Management</h1>
+        <h1>Management</h1>
         <h2>
-            <a href="studentsManager?action=studentsManager">List All Student</a>
+            <a href="phongTro?action=phongTro">List All</a>
         </h2>
         <form method="post" class="form">
             <caption>
@@ -20,42 +20,45 @@
             </caption>
             <table border="1" cellpadding="5" class="table table-light table-striped container">
                 <tr>
-                    <th>Student Full Name:</th>
+                    <th>Mã phòng trọ:</th>
                     <td>
-                        <input  type="text" name="name" id="name" size="45" style="width: 370px; height: 30px; " pattern="[A-Za-zĐđÀ-ỹ ]{4,50}" oninvalid="this.setCustomValidity('Vui lòng nhập theo định dạng!')" oninput="setCustomValidity('')" />
+                        <input  type="text" name="ma_phong_tro" id="ma_phong_tro" size="45" style="width: 370px; height: 30px; " pattern="[A-Za-zĐđÀ-ỹ ]{5,50}" oninvalid="this.setCustomValidity('Vui lòng nhập theo định dạng!')" oninput="setCustomValidity('')" />
                     </td>
                 </tr>
                 <tr>
-                    <th>Date of birth:</th>
+                    <th>Tên người thuê trọ:</th>
                     <td>
-                        <input type="date" name="dob" id="dob" size="45" style="width: 370px; height: 30px;"/>
+                        <input type="text" name="ten_nguoi_thue" id="ten_nguoi_tue" size="45" style="width: 370px; height: 30px;"/>
                     </td>
                 </tr>
                 <tr>
-                    <th>Gender:</th>
+                    <th>Số điện thoại:</th>
                     <td>
-                        <input type="checkbox" id="gender1" name="gender" value="Nam">
-                        <label for="gender1"> Nam</label>
-                        <input type="checkbox" id="gender2" name="gender" value="Nam">
-                        <label for="gender2"> Nữ</label>
+                        <input type="text" name="so_dien_thoai" id="so_dien_thoai" size="45" style="width: 370px; height: 30px;" pattern="^\d{10}$" oninvalid="this.setCustomValidity('Vui lòng nhập theo định dạng!')" oninput="setCustomValidity('')"/>
                     </td>
                 </tr>
                 <tr>
-                    <th>Phone:</th>
+                    <th>Ngày bắt đầu thuê:</th>
                     <td>
-                        <input type="text" name="phone" id="phone" size="45" style="width: 370px; height: 30px;"/>
+                        <input type="date" name="ngay_thue" id="ngay_thue" size="45" style="width: 370px; height: 30px;"/>
                     </td>
                 </tr>
                 <tr>
-                    <th>Class:</th>
+                    <th>Hình thức thanh toán:</th>
                     <td>
-                        <select name="classId" id="classId" style="width: 370px; height: 30px;">
-                            <c:forEach var="classes" items="${classesList}">
-                                <option value="${classes.classId}" >${classes.nameClass}</option>
-                            </c:forEach>
-                        </select>
-<%--                        <input type="text" name="classId" id="classId" style="width: 370px; height: 30px;"--%>
-<%--                        />--%>
+<%--                        <select name="classId" id="classId" style="width: 370px; height: 30px;">--%>
+<%--                            <c:forEach var="classes" items="${classesList}">--%>
+<%--                                <option value="${classes.classId}" >${classes.nameClass}</option>--%>
+<%--                            </c:forEach>--%>
+<%--                        </select>--%>
+                        <input type="text" name="ma_thanh_toan" id="ma_thanh_toan" style="width: 370px; height: 30px;"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Ghi chú:</th>
+                    <td>
+                        <input type="text" name="ghi_chu" id="ghi_chu" size="45" style="width: 370px; height: 30px;"/>
                     </td>
                 </tr>
                 <tr>

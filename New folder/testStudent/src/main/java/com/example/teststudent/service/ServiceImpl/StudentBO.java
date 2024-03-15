@@ -1,5 +1,6 @@
 package com.example.teststudent.service.ServiceImpl;
 
+import com.example.teststudent.DTO.StudentDTO;
 import com.example.teststudent.model.Student;
 import com.example.teststudent.repository.IStudentDao;
 import com.example.teststudent.repository.RepositoryImpl.StudentDao;
@@ -15,22 +16,27 @@ public class StudentBO implements IStudentBO {
     }
 
     @Override
-    public Student electObj(int id) {
-        return null;
+    public Student selectObj(int id) {
+        return studentDao.selectObj(id);
     }
-
     @Override
     public boolean addObj(Student student) {
-        return false;
+        return studentDao.addObj(student);
     }
 
     @Override
     public boolean removeObj(int id) {
-        return false;
+
+        return studentDao.removeObj(id);
+    }
+
+    @Override
+    public List<StudentDTO> selectAllStudentDTO() {
+        return studentDao.selectAllObjDTO();
     }
 
     @Override
     public boolean updateObj(Student student) {
-        return false;
+        return studentDao.updateObj(student);
     }
 }

@@ -1,4 +1,4 @@
-package models;
+package untitled.src.models;
 
 public class Benh_Nhan_Thuong extends Benh_Nhan {
     private int phi_nam_vien;

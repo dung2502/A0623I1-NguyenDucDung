@@ -1,4 +1,4 @@
-package models;
+package untitled.src.models;
 
 public class Benh_Nhan_Vip extends Benh_Nhan {
     private String vip;

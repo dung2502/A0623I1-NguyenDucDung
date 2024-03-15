@@ -3,67 +3,56 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-    <title>Room Management Application</title>
+    <title>Product Management Application</title>
     <link rel="stylesheet" href="../static/bootstrap-5.0.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
 <div class="background-form container">
     <div align="center">
-        <h1>Room Management</h1>
+        <h1>Product Management</h1>
         <h2>
-            <a href="roomsManager?action=roomsManager">List All Student</a>
+            <a href="elementManager?action=elementManager">List All Product</a>
         </h2>
         <form method="post" class="form">
             <caption>
-                <h2>Add New Room</h2>
+                <h2>Add New Product</h2>
             </caption>
             <table border="1" cellpadding="5" class="table table-light table-striped container">
                 <tr>
-                    <th>Room ID:</th>
+                    <th>Product Name:</th>
                     <td>
-                        <input  type="text" name="room_id" id="room_id" size="45" style="width: 370px; height: 30px; " />
+                        <input  type="text" name="product_name" id="product_name" size="45" style="width: 370px; height: 30px; " required />
                     </td>
                 </tr>
                 <tr>
-                    <th>Person Name:</th>
+                    <th>Price:</th>
                     <td>
-                        <input  type="text" name="person_name" id="person_name" size="45" style="width: 370px; height: 30px; " required pattern="[A-Za-zĐđÀ-ỹ ]{4,50}" oninvalid="this.setCustomValidity('Tên người thuê phải là ký tự chữ cái từ 5 đến 50 ký tự')" oninput="setCustomValidity('')" />
+                        <input  type="text" name="price" id="price" size="45" style="width: 370px; height: 30px; " required />
                     </td>
                 </tr>
                 <tr>
-                    <th>Phone Number:</th>
+                    <th> Quantity: </th>
                     <td>
-                        <input type="text" name="phone_number" id="phone_number" size="45" style="width: 370px; height: 30px;" required pattern="\d{10}" oninvalid="this.setCustomValidity('Vui lòng nhập đúng 10 chữ số')" oninput="setCustomValidity('')"/>
+                        <input  type="text" name="quantity" id="quantity" size="45" style="width: 370px; height: 30px; " required  />
                     </td>
                 </tr>
                 <tr>
-                    <th>Rental Start Date:</th>
+                    <th> Color: </th>
                     <td>
-                        <input type="date" name="rental_start_date" id="rental_start_date" size="45" style="width: 370px; height: 30px; " required oninvalid="this.setCustomValidity('Vui lòng nhập đúng quy định YY/MM/DD')" oninput="setCustomValidity('')"/>
+                        <input  type="text" name="color" id="color" size="45" style="width: 370px; height: 30px; " required/>
                     </td>
                 </tr>
 
                 <tr>
-                    <th>Payments :</th>
+                    <th> Category :</th>
                     <td>
-                        <select name="payment_code" id="payment_code" class="input" required>
-                            <option value="1">Theo Tháng</option>
-                            <option value="2">Theo Quý</option>
-                            <option value="3">Theo Năm</option>
+                        <select name="category_code" id="category_code" class="input" required>
+                            <option value="1">iPhone</option>
+                            <option value="2">Tivi</option>
+                            <option value="3">Tủ lạnh</option>
+                            <option value="4">Máy giặt</option>
                         </select>
-<%--                        <select name="payment_code" id="payment_code" style="width: 370px; height: 30px;">--%>
-<%--                            <c:forEach var="bill" items="${ListRoom1}">--%>
-<%--                                <option value="${bill.payment_code}" >${bill.payments}</option>--%>
-<%--                            </c:forEach>--%>
-<%--                        </select>--%>
-<%--                        <input type="text" name="payment_code" id="payment_code" style="width: 370px; height: 30px;"/>--%>
-                    </td>
-                </tr>
-                <tr>
-                    <th>Note :</th>
-                    <td>
-                        <input type="text" name="note" id="note" size="45" style="width: 370px; height: 30px;" required oninvalid="this.setCustomValidity('Vui lòng nhập nguyện vọng của bạn')" oninput="setCustomValidity('')" />
                     </td>
                 </tr>
                 <tr>

@@ -6,7 +6,7 @@ import com.example.end_module.repository.IUserRepository;
 import java.sql.SQLException;
 import java.util.List;
 
-public class UserDao implements IUserRepository {
+public class UserRepository implements IUserRepository {
     private String jdbcURL = "jdbc:mysql://localhost:3306/?user=root";
     private String jdbcUsername = "root";
     private String jdbcPassword = "123456";

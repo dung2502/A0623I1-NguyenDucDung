@@ -1,4 +1,4 @@
-package com.example.end_module.controller;
+package com.example.end_module.model;
 
 public class User {
     protected int id;

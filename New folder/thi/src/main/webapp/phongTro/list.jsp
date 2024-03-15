@@ -40,23 +40,18 @@
         </tr>
         </thead>
         <tbody>
-        <c:forEach var="phongtro" items="${danhSachPhong}">
+        <c:forEach var="danhsachphongtro" items="${danhSachPhong}">
             <tr>
-                
-                <td><c:out value="${phongtro.maphongtro}"/></td>
-                <td><c:out value="${phongtro.tennguoithue}"/></td>
-                <td><c:out value="${phongtro.sodienthoai}"/></td>
-                <td><c:out value="${phongtro.ngaybatdauthue}"/></td>
-                <td><c:out value="${phongtro.mathanhtoan}"/></td>
-                <td><c:out value="${phongtro.ghichu}"/></td>
-                <td>
-                    <button type="button" class="btn btn-primary" onclick="window.location.href='/phongTro?action=edit&id=${phongtro.id}'">
-                        Edit
-                    </button>
-                </td>
+                <td><c:out value="${danhsachphongtro.stt}"/></td>
+                <td><c:out value="${danhsachphongtro.ma_phong_tro}"/></td>
+                <td><c:out value="${danhsachphongtro.ten_nguoi_thue}"/></td>
+                <td><c:out value="${danhsachphongtro.so_dien_thoai}"/></td>
+                <td><c:out value="${danhsachphongtro.ngay_thue}"/></td>
+                <td><c:out value="${danhsachphongtro.ma_thanh_toan}"/></td>
+                <td><c:out value="${danhsachphongtro.ghi_chu}"/></td>
                 <td>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" onclick="deleteModal(${phongtro.id})" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" onclick="deleteModal(${danhsachphongtro.stt})" data-bs-target="#exampleModal">
                         Delete
                     </button>
                 </td>

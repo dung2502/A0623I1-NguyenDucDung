@@ -3,59 +3,67 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-    <title>Student Management Application</title>
+    <title>Room Management Application</title>
     <link rel="stylesheet" href="../static/bootstrap-5.0.2-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
 <div class="background-form container">
     <div align="center">
-        <h1>Student Management</h1>
+        <h1>Room Management</h1>
         <h2>
-            <a href="studentsManager?action=studentsManager">List All Student</a>
+            <a href="roomsManager?action=roomsManager">List All Student</a>
         </h2>
         <form method="post" class="form">
             <caption>
-                <h2>Add New Student</h2>
+                <h2>Add New Room</h2>
             </caption>
             <table border="1" cellpadding="5" class="table table-light table-striped container">
                 <tr>
-                    <th>Student Full Name:</th>
+                    <th>Room ID:</th>
                     <td>
-                        <input  type="text" name="name" id="name" size="45" style="width: 370px; height: 30px; " pattern="[A-Za-zĐđÀ-ỹ ]{4,50}" oninvalid="this.setCustomValidity('Vui lòng nhập theo định dạng!')" oninput="setCustomValidity('')" />
+                        <input  type="text" name="room_id" id="room_id" size="45" style="width: 370px; height: 30px; " />
                     </td>
                 </tr>
                 <tr>
-                    <th>Date of birth:</th>
+                    <th>Person Name:</th>
                     <td>
-                        <input type="date" name="dob" id="dob" size="45" style="width: 370px; height: 30px;"/>
+                        <input  type="text" name="person_name" id="person_name" size="45" style="width: 370px; height: 30px; " required pattern="[A-Za-zĐđÀ-ỹ ]{4,50}" oninvalid="this.setCustomValidity('Tên người thuê phải là ký tự chữ cái từ 5 đến 50 ký tự')" oninput="setCustomValidity('')" />
                     </td>
                 </tr>
                 <tr>
-                    <th>Gender:</th>
+                    <th>Phone Number:</th>
                     <td>
-                        <input type="checkbox" id="gender1" name="gender" value="Nam">
-                        <label for="gender1"> Nam</label>
-                        <input type="checkbox" id="gender2" name="gender" value="Nam">
-                        <label for="gender2"> Nữ</label>
+                        <input type="text" name="phone_number" id="phone_number" size="45" style="width: 370px; height: 30px;" required pattern="\d{10}" oninvalid="this.setCustomValidity('Vui lòng nhập đúng 10 chữ số')" oninput="setCustomValidity('')"/>
                     </td>
                 </tr>
                 <tr>
-                    <th>Phone:</th>
+                    <th>Rental Start Date:</th>
                     <td>
-                        <input type="text" name="phone" id="phone" size="45" style="width: 370px; height: 30px;"/>
+                        <input type="date" name="rental_start_date" id="rental_start_date" size="45" style="width: 370px; height: 30px; " required oninvalid="this.setCustomValidity('Vui lòng nhập đúng quy định YY/MM/DD')" oninput="setCustomValidity('')"/>
                     </td>
                 </tr>
+
                 <tr>
-                    <th>Class:</th>
+                    <th>Payments :</th>
                     <td>
-                        <select name="classId" id="classId" style="width: 370px; height: 30px;">
-                            <c:forEach var="classes" items="${classesList}">
-                                <option value="${classes.classId}" >${classes.nameClass}</option>
-                            </c:forEach>
+                        <select name="payment_code" id="payment_code" class="input" required>
+                            <option value="1">Theo Tháng</option>
+                            <option value="2">Theo Quý</option>
+                            <option value="3">Theo Năm</option>
                         </select>
-<%--                        <input type="text" name="classId" id="classId" style="width: 370px; height: 30px;"--%>
-<%--                        />--%>
+<%--                        <select name="payment_code" id="payment_code" style="width: 370px; height: 30px;">--%>
+<%--                            <c:forEach var="bill" items="${ListRoom1}">--%>
+<%--                                <option value="${bill.payment_code}" >${bill.payments}</option>--%>
+<%--                            </c:forEach>--%>
+<%--                        </select>--%>
+<%--                        <input type="text" name="payment_code" id="payment_code" style="width: 370px; height: 30px;"/>--%>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Note :</th>
+                    <td>
+                        <input type="text" name="note" id="note" size="45" style="width: 370px; height: 30px;" required oninvalid="this.setCustomValidity('Vui lòng nhập nguyện vọng của bạn')" oninput="setCustomValidity('')" />
                     </td>
                 </tr>
                 <tr>
