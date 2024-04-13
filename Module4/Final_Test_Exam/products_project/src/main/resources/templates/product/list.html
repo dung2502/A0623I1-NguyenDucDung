@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Management</title>
+ <link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+ <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="video-bg">
+ <video width="320" height="240" autoplay loop muted>
+  <source src="https://assets.codepen.io/3364143/7btrrd.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+<div class="dark-light">
+    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+     <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" /></svg>
+</div>
+<div class="app">
+ <div class="header">
+  <div class="menu-circle">
+   <h3>Product Management</h3>
+  </div>
+  <form method="get" action="/product" class="search-bar">
+   <input type="text" name="nameSearch" th:value="${nameSearch}" class="searching" placeholder="Search By ProductName">
+   <input type="number" name="priceBefore" th:value="${#numbers.formatDecimal(priceBefore, 0, 0)}" class="searching" placeholder="Start">
+   <input type="number" name="priceAfter" th:value="${#numbers.formatDecimal(priceAfter, 0, 0)}" class="searching" placeholder="End">
+   <button class="btn btn-search">search</button>
+  </form>
+ </div>
+ <div class="wrapper">
+  <div class="left-side">
+   <div class="side-wrapper">
+    <div class="side-title">Main</div>
+    <div class="side-menu">
+     <a th:href="@{/product}">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor">
+       <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1
+       0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32
+       14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6
+       .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8
+       22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/>
+      </svg>
+      Home
+     </a>
+     <a th:href="@{/product/create}">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+       <path d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3
+       39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7
+       9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5
+       3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1
+       425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1
+       64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11
+        14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3
+        18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1
+        44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256
+        336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"/>
+      </svg>
+      Create new Product
+     </a>
+    </div>
+   </div>
+   <div class="side-wrapper">
+    <div class="side-title ">Categories
+     <a th:href="@{/categories}">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+       <path d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3
+       39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7
+       9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5
+       3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1
+       425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1
+       64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11
+        14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3
+        18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1
+        44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256
+        336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"/>
+      </svg>
+      <span class="setting-category">Setting</span>
+     </a>
+    </div>
+    <div class="side-menu">
+     <div th:each="category: ${categories}">
+      <a th:href="@{/product(page = ${page}, nameSearch = ${nameSearch}, categoryName = ${category.categoryName},
+      priceBefore = ${priceBefore}, priceAfter = ${priceAfter})}"
+         th:text="${category.categoryName}"></a>
+     </div>
+     <div>
+      <a th:href="@{/product}">All</a>
+     </div>
+    </div>
+   </div>
+
+  </div>
+  <div class="main-container">
+   <div class="content-wrapper">
+    <div class="content-section">
+     <div class="content-section-title">Product list</div>
+     <table class="table">
+      <thead>
+       <th>No</th>
+       <th style="width: 220px">Name</th>
+       <th style="width: 100px">Price</th>
+       <th>Status</th>
+       <th>Category</th>
+       <th>Edit</th>
+       <th>Delete</th>
+       <th>View</th>
+      </thead>
+      <tbody>
+      <tr th:each="product, iter:${products.content}">
+       <td th:text="${iter.count}"></td>
+       <td th:text="${product.productName}"></td>
+       <td th:text="${#numbers.formatDecimal(product.price, 0, 'COMMA', 0, 'POINT')}"></td>
+       <td>
+          <span th:if="${product.status == true}">Availability</span>
+          <span th:if="${product.status == false}">Sold out</span>
+       </td>
+       <td th:text="${product.category.categoryName}"></td>
+       <td>
+        <button class="content-button" th:attr = "onclick=|window.location.href = '@{/product/{productId}/edit(productId =${product.productId})}'|">Update</button>
+       </td>
+       <td>
+        <button class="content-button content-button-red"  th:data-name="${product.productName}" th:data-id="${product.productId}"
+                th:onclick="changeInfo(this.getAttribute('data-name'), this.getAttribute('data-id'))"
+                data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button>
+       </td>
+       <td>
+        <button class="content-button content-button-blue" th:attr = "onclick=|window.location.href = '@{/product/{id}/view(id =${product.productId})}'|">Show</button>
+       </td>
+      </tr>
+      </tbody>
+     </table>
+     <div class="notify">
+      <div th:if="${message}">
+       <span th:text="${message}" class="text-danger"></span>
+      </div>
+     </div>
+     <div class="page">
+      <a th:if="${products.hasPrevious()}" class="page-a"
+         th:href="@{/products(page = ${products.number - 1}, nameSearch = ${nameSearch}, categoryName = ${categoryName},
+         priceBefore = ${priceBefore}, priceAfter = ${priceAfter})}">Previous
+       page</a>
+      <span th:each="pageNo: ${#numbers.sequence(0, products.totalPages - 1)}">
+                        <a th:href="@{/products(page = ${pageNo}, nameSearch = ${nameSearch}, categoryName = ${categoryName},
+                        priceBefore = ${priceBefore}, priceAfter = ${priceAfter})}" th:text="${pageNo}" class="page-a"></a>
+                    </span>
+      <a th:if="${products.hasNext()}" class="page-a"
+         th:href="@{/products(page = ${products.number + 1}, nameSearch = ${nameSearch}, categoryName = ${categoryName},
+         priceBefore = ${priceBefore}, priceAfter = ${priceAfter})}">Next
+       page</a>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="overlay-app"></div>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="modal-dialog">
+  <div class="modal-content">
+   <form action="/product/delete" method="post">
+    <input id="productIdDelete" name="productIdDelete" type="hidden">
+    <div class="modal-header">
+     <h5 class="modal-title">Delete Product?</h5>
+     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+     <p>Do you to delete product: <span id="nameProduct"></span> with code: <span
+             id="productId"></span></p>
+    </div>
+    <div class="modal-footer">
+     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+     <button type="submit" class="btn btn-primary">Accept</button>
+    </div>
+   </form>
+  </div>
+
+ </div>
+</div>
+<!-- partial -->
+<script  th:src="@{/js/bootstrap.bundle.js}"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  th:src="@{/js/script.js}"></script>
+<script th:inline="javascript">
+ function changeInfo(name, id) {
+  document.getElementById("nameProduct").innerText = name;
+  document.getElementById("productId").innerText = id;
+  document.getElementById("productIdDelete").value = id;
+  console.log(name, id)
+ }
+</script>
+</body>
+</html>
